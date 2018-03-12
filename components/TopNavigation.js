@@ -3,12 +3,15 @@ import { Affix, Row, Col, Menu, Icon } from 'antd'
 const Item = Menu.Item
 const SubMenu = Menu.SubMenu
 
-const affix = {
+const AffixStyle = {
   width:"100%"
+}
+const AuthTab = {
+  float:'right'
 }
 
 export default () => (
-  <Affix style={affix}>
+  <Affix style={AffixStyle}>
     <div className="menu-container">
       <Row className="" type="flex" justify="center">
         <Col xs={24} sm={7} md={5}>
@@ -25,7 +28,7 @@ export default () => (
         </Col>
         <Col span={3}>
           <Menu mode="horizontal">
-            <Item className="" key="/login" style={{float:'right'}}><Link href="/login"><a><Icon type="user" />Login / Register</a></Link></Item>
+            <Item className="" key="/login" style={AuthTab}><Link href="/login"><a><Icon type="user" />Login / Register</a></Link></Item>
           </Menu>
         </Col>
       </Row>
