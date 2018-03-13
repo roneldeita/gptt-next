@@ -1,0 +1,16 @@
+.logo{
+  width: 155px;
+  margin-bottom: -15px;
+}
+.menuContainer{
+  font-size: 14px;
+  background-color: #ffffff;
+  line-height: 70px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.affix{
+  width:100%
+}
+.authTab{
+  float:right
+}
