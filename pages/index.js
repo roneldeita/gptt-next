@@ -10,10 +10,9 @@ class Index extends React.Component {
     return { userAgent }
   }
   render(){
-    console.log(this.props)
+    console.log(process.env.API_HOST)
     return(
       <Layout>
-        <p className={css.example} style={{border:'1px solid #000000'}}>Test</p>
         <Carousel />
         {this.props.userAgent}
         {this.props.source}
