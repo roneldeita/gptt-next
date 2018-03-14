@@ -67,12 +67,80 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/auth/LoginForm.js":
+/***/ "./components/auth/container/LoginContainer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__presentation_LoginForm__ = __webpack_require__("./components/auth/presentation/LoginForm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd__ = __webpack_require__("antd");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_antd__);
+var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\auth\\container\\LoginContainer.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+var LoginContainer = function (_React$Component) {
+  _inherits(LoginContainer, _React$Component);
+
+  function LoginContainer(props) {
+    _classCallCheck(this, LoginContainer);
+
+    return _possibleConstructorReturn(this, (LoginContainer.__proto__ || Object.getPrototypeOf(LoginContainer)).call(this, props));
+  }
+
+  _createClass(LoginContainer, [{
+    key: 'responseGoogle',
+    value: function responseGoogle(event) {
+      console.log(event);
+    }
+  }, {
+    key: 'responseFacebook',
+    value: function responseFacebook(event) {
+      console.log(event);
+    }
+  }, {
+    key: 'handleSubmit',
+    value: function handleSubmit(event) {
+      console.log(event);
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _React$createElement;
+
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_LoginForm__["a" /* default */], (_React$createElement = { form: this.props.form, onSubmit: this.handleSubmit, responseGoogle: this.responseGoogle }, _defineProperty(_React$createElement, 'responseGoogle', this.responseFacebook), _defineProperty(_React$createElement, '__source', {
+        fileName: _jsxFileName,
+        lineNumber: 20
+      }), _React$createElement));
+    }
+  }]);
+
+  return LoginContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_2_antd__["Form"].create()(LoginContainer));
+
+/***/ }),
+
+/***/ "./components/auth/presentation/LoginForm.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82,45 +150,61 @@ module.exports =
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_google_login__ = __webpack_require__("react-google-login");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_google_login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_google_login__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__static_css_login_form_css__ = __webpack_require__("./static/css/login-form.css");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__static_css_login_form_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__static_css_login_form_css__);
-var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\auth\\LoginForm.js';
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_facebook_login_dist_facebook_login_render_props__ = __webpack_require__("react-facebook-login/dist/facebook-login-render-props");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_facebook_login_dist_facebook_login_render_props___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_react_facebook_login_dist_facebook_login_render_props__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css__ = __webpack_require__("./static/css/login-form.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css__);
+var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\auth\\presentation\\LoginForm.js';
 
 
 
 
 
+
+
+var FormItem = __WEBPACK_IMPORTED_MODULE_1_antd__["Form"].Item;
 
 var googleButtonStyle = {
   width: '100%',
   height: 'auto',
   padding: '10px 0px',
   marginBottom: '25px',
-  color: '#444',
+  color: '#444444',
   border: 'thin solid #888888'
+};
+var facebookButtonStyle = {
+  width: '100%',
+  height: 'auto',
+  padding: '10px 0px',
+  marginBottom: '25px',
+  color: '#ffffff',
+  backgroundColor: '#3b5998'
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
-  var responseGoogle = _ref.responseGoogle;
+  var form = _ref.form,
+      onSubmit = _ref.onSubmit,
+      responseGoogle = _ref.responseGoogle,
+      responseFacebook = _ref.responseFacebook;
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    { className: __WEBPACK_IMPORTED_MODULE_3__static_css_login_form_css___default.a.container, __source: {
+    { className: __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default.a.container, __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 27
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
       { type: 'flex', justify: 'center', gutter: 20, style: { margin: 0 }, __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 28
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
         { xs: 24, sm: 24, md: 12, lg: 7, __source: {
             fileName: _jsxFileName,
-            lineNumber: 18
+            lineNumber: 29
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -128,14 +212,14 @@ var googleButtonStyle = {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 19
+              lineNumber: 30
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
-            { className: __WEBPACK_IMPORTED_MODULE_3__static_css_login_form_css___default.a.title, __source: {
+            { className: __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default.a.title, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 20
+                lineNumber: 31
               }
             },
             'Start emmediately using your social account'
@@ -145,12 +229,12 @@ var googleButtonStyle = {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 32
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'rocket', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 21
+                lineNumber: 32
               }
             }),
             ' No more email validation.'
@@ -158,36 +242,62 @@ var googleButtonStyle = {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 21
+              lineNumber: 32
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_2_react_google_login__["GoogleLogin"],
+            __WEBPACK_IMPORTED_MODULE_2_react_google_login___default.a,
             {
               style: googleButtonStyle,
-              className: 'ant-btn ant-btn-lg google-login',
-              clientId: '658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com',
+              className: 'ant-btn',
+              clientId: '260337772129-ff01h5ua9ob0fvf5vik7c0und2279776.apps.googleusercontent.com',
               onSuccess: responseGoogle,
               onFailure: responseGoogle,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 22
+                lineNumber: 33
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'google', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 28
+                lineNumber: 39
               }
             }),
             ' Login with Google'
-          )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_facebook_login_dist_facebook_login_render_props___default.a, {
+            appId: '199102420673819',
+            autoLoad: false,
+            callback: responseFacebook,
+            id: 'facebook-button',
+            render: function render(renderProps) {
+              return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'button',
+                { onClick: renderProps.onClick, className: 'ant-btn', style: facebookButtonStyle, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 47
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'facebook', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 47
+                  }
+                }),
+                ' Login with Facebook'
+              );
+            },
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 41
+            }
+          })
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
         { xs: 24, sm: 24, md: 12, lg: 7, __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 52
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -195,14 +305,14 @@ var googleButtonStyle = {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 33
+              lineNumber: 53
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
-            { className: __WEBPACK_IMPORTED_MODULE_3__static_css_login_form_css___default.a.title, __source: {
+            { className: __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default.a.title, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 34
+                lineNumber: 54
               }
             },
             'Login using your email'
@@ -210,9 +320,39 @@ var googleButtonStyle = {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 54
             }
-          })
+          }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Form"],
+            { onSubmit: onSubmit, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 55
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              FormItem,
+              {
+                hasFeedback: form.isFieldTouched('Email'),
+                validateStatus: form.getFieldError('Email') ? 'error' : 'success',
+                help: form.getFieldError('Email') || '', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 56
+                }
+              },
+              form.getFieldDecorator('Email', {
+                rules: [{ required: true }, { type: 'email' }]
+              })(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { placeholder: 'Email', size: 'large', prefix: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'mail', style: { color: 'rgba(0,0,0,.25)' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 66
+                  }
+                }), __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 66
+                }
+              }))
+            )
+          )
         )
       )
     )
@@ -371,7 +511,10 @@ var styles = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__TopNavigation__ = __webpack_require__("./components/layout/TopNavigation.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__BottomNavigation__ = __webpack_require__("./components/layout/BottomNavigation.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_css_layout_css__ = __webpack_require__("./static/css/layout.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__static_css_layout_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__static_css_layout_css__);
 var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layout.js';
+
 
 
 
@@ -382,10 +525,10 @@ var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layou
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
     {
-      className: 'jsx-67560545',
+      className: 'jsx-2120913412',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 6
+        lineNumber: 7
       }
     },
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -393,29 +536,35 @@ var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layou
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 7
+          lineNumber: 8
         }
       },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'http://cdn.bootcss.com/antd/2.9.3/antd.css', className: 'jsx-67560545',
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'http://cdn.bootcss.com/antd/3.3.0/antd.min.css', className: 'jsx-2120913412',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 9
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i', className: 'jsx-2120913412',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
         }
       })
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TopNavigation__["a" /* default */], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 12
       }
     }),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'div',
       {
-        className: 'jsx-67560545' + ' ' + 'layout',
+        className: 'jsx-2120913412' + ' ' + (__WEBPACK_IMPORTED_MODULE_5__static_css_layout_css___default.a.layout || ''),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 13
         }
       },
       props.children
@@ -423,16 +572,12 @@ var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layou
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__BottomNavigation__["a" /* default */], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 16
       }
     }),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-      styleId: '967689679',
-      css: '.layout.jsx-67560545{min-height:80vh;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGxheW91dFxcTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWNnQixBQUlNLGdCQUFDIiwiZmlsZSI6ImNvbXBvbmVudHNcXGxheW91dFxcTGF5b3V0LmpzIiwic291cmNlUm9vdCI6IkM6L1VzZXJzL3VpL0Rlc2t0b3AvZ3B0dC1uZXh0Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJ1xyXG5pbXBvcnQgVG9wTmF2aWdhdGlvbiBmcm9tICcuL1RvcE5hdmlnYXRpb24nXHJcbmltcG9ydCBCb3R0b21OYXZpZ2F0aW9uIGZyb20gJy4vQm90dG9tTmF2aWdhdGlvbidcclxuXHJcbmV4cG9ydCBkZWZhdWx0IChwcm9wcykgPT4gKFxyXG4gIDxkaXY+XHJcbiAgICA8SGVhZD5cclxuICAgICAgPGxpbmsgcmVsPSdzdHlsZXNoZWV0JyBocmVmPSdodHRwOi8vY2RuLmJvb3Rjc3MuY29tL2FudGQvMi45LjMvYW50ZC5jc3MnLz5cclxuICAgIDwvSGVhZD5cclxuICAgIDxUb3BOYXZpZ2F0aW9uLz5cclxuICAgIDxkaXYgY2xhc3NOYW1lPVwibGF5b3V0XCI+XHJcbiAgICAgIHtwcm9wcy5jaGlsZHJlbn1cclxuICAgIDwvZGl2PlxyXG4gICAgPEJvdHRvbU5hdmlnYXRpb24gLz5cclxuICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgLmxheW91dHtcclxuICAgICAgICBtaW4taGVpZ2h0OiA4MHZoXHJcbiAgICAgIH1cclxuICAgIGB9XHJcbiAgICA8L3N0eWxlPlxyXG4gICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgLmJvcmRlcntcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMDAwMDAwXHJcbiAgICAgIH1cclxuICAgIGB9XHJcbiAgICA8L3N0eWxlPlxyXG4gIDwvZGl2PlxyXG4pXHJcbiJdfQ== */\n/*@ sourceURL=components\\layout\\Layout.js */'
-    }),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-      styleId: '922763559',
-      css: '.border{border:1px solid #000000;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGxheW91dFxcTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQW9CdUIsQUFJTSx5QkFBQyIsImZpbGUiOiJjb21wb25lbnRzXFxsYXlvdXRcXExheW91dC5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy91aS9EZXNrdG9wL2dwdHQtbmV4dCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcclxuaW1wb3J0IFRvcE5hdmlnYXRpb24gZnJvbSAnLi9Ub3BOYXZpZ2F0aW9uJ1xyXG5pbXBvcnQgQm90dG9tTmF2aWdhdGlvbiBmcm9tICcuL0JvdHRvbU5hdmlnYXRpb24nXHJcblxyXG5leHBvcnQgZGVmYXVsdCAocHJvcHMpID0+IChcclxuICA8ZGl2PlxyXG4gICAgPEhlYWQ+XHJcbiAgICAgIDxsaW5rIHJlbD0nc3R5bGVzaGVldCcgaHJlZj0naHR0cDovL2Nkbi5ib290Y3NzLmNvbS9hbnRkLzIuOS4zL2FudGQuY3NzJy8+XHJcbiAgICA8L0hlYWQ+XHJcbiAgICA8VG9wTmF2aWdhdGlvbi8+XHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cImxheW91dFwiPlxyXG4gICAgICB7cHJvcHMuY2hpbGRyZW59XHJcbiAgICA8L2Rpdj5cclxuICAgIDxCb3R0b21OYXZpZ2F0aW9uIC8+XHJcbiAgICA8c3R5bGUganN4PntgXHJcbiAgICAgIC5sYXlvdXR7XHJcbiAgICAgICAgbWluLWhlaWdodDogODB2aFxyXG4gICAgICB9XHJcbiAgICBgfVxyXG4gICAgPC9zdHlsZT5cclxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXHJcbiAgICAgIC5ib3JkZXJ7XHJcbiAgICAgICAgYm9yZGVyOiAxcHggc29saWQgIzAwMDAwMFxyXG4gICAgICB9XHJcbiAgICBgfVxyXG4gICAgPC9zdHlsZT5cclxuICA8L2Rpdj5cclxuKVxyXG4iXX0= */\n/*@ sourceURL=components\\layout\\Layout.js */'
+      styleId: '2120913412',
+      css: 'html,body{font-family:\'Roboto\',sans-serif;}.border{border:1px solid #000000;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGxheW91dFxcTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCdUIsQUFHMEMsQUFJcEMseUJBQUMsT0FIQSIsImZpbGUiOiJjb21wb25lbnRzXFxsYXlvdXRcXExheW91dC5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy91aS9EZXNrdG9wL2dwdHQtbmV4dCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcclxuaW1wb3J0IFRvcE5hdmlnYXRpb24gZnJvbSAnLi9Ub3BOYXZpZ2F0aW9uJ1xyXG5pbXBvcnQgQm90dG9tTmF2aWdhdGlvbiBmcm9tICcuL0JvdHRvbU5hdmlnYXRpb24nXHJcbmltcG9ydCBjc3MgZnJvbSAnLi4vLi4vc3RhdGljL2Nzcy9sYXlvdXQuY3NzJ1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgKHByb3BzKSA9PiAoXHJcbiAgPGRpdj5cclxuICAgIDxIZWFkPlxyXG4gICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cImh0dHA6Ly9jZG4uYm9vdGNzcy5jb20vYW50ZC8zLjMuMC9hbnRkLm1pbi5jc3NcIi8+XHJcbiAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzoxMDAsMTAwaSwzMDAsMzAwaSw0MDAsNDAwaSw1MDAsNTAwaSw3MDAsNzAwaSw5MDAsOTAwaVwiLz5cclxuICAgIDwvSGVhZD5cclxuICAgIDxUb3BOYXZpZ2F0aW9uLz5cclxuICAgIDxkaXYgY2xhc3NOYW1lPXtjc3MubGF5b3V0fT5cclxuICAgICAge3Byb3BzLmNoaWxkcmVufVxyXG4gICAgPC9kaXY+XHJcbiAgICA8Qm90dG9tTmF2aWdhdGlvbiAvPlxyXG4gICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgaHRtbCwgYm9keXtcclxuICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbiAgICAgIH1cclxuICAgICAgLmJvcmRlcntcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMDAwMDAwXHJcbiAgICAgIH1cclxuICAgIGB9XHJcbiAgICA8L3N0eWxlPlxyXG4gIDwvZGl2PlxyXG4pXHJcbiJdfQ== */\n/*@ sourceURL=components\\layout\\Layout.js */'
     })
   );
 });
@@ -1382,60 +1527,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_layout_Layout__ = __webpack_require__("./components/layout/Layout.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_auth_LoginForm__ = __webpack_require__("./components/auth/LoginForm.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_auth_container_LoginContainer__ = __webpack_require__("./components/auth/container/LoginContainer.js");
 var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\pages\\login.js';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    __WEBPACK_IMPORTED_MODULE_1__components_layout_Layout__["a" /* default */],
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 5
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_auth_container_LoginContainer__["a" /* default */], {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 6
+      }
+    })
+  );
+});
 
+/***/ }),
 
-var Login = function (_React$Component) {
-  _inherits(Login, _React$Component);
+/***/ "./static/css/layout.css":
+/***/ (function(module, exports) {
 
-  function Login() {
-    _classCallCheck(this, Login);
-
-    return _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).apply(this, arguments));
-  }
-
-  _createClass(Login, [{
-    key: 'responseGoogle',
-    value: function responseGoogle(event) {
-      console.log(event);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      console.log(this.props);
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1__components_layout_Layout__["a" /* default */],
-        {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 12
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_auth_LoginForm__["a" /* default */], { responseGoogle: this.responseGoogle, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13
-          }
-        })
-      );
-    }
-  }]);
-
-  return Login;
-}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (Login);
+module.exports = {
+	"layout": "xDNtRBi4yhY38VscFqtEx"
+};
 
 /***/ }),
 
@@ -1444,7 +1567,9 @@ var Login = function (_React$Component) {
 
 module.exports = {
 	"container": "dlPnzszP8HqAHJ8UjL23c",
-	"title": "C7D9zTSw5dC-Ief5PLbW_"
+	"title": "C7D9zTSw5dC-Ief5PLbW_",
+	"googleButton": "_6Hz5sgn_OaWlw_nHOa_Lg",
+	"facebookButton": "_3KKL4Em2__lH8hCTBXicV5"
 };
 
 /***/ }),
@@ -1461,7 +1586,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/login.js");
@@ -1494,6 +1619,13 @@ module.exports = require("next/link");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-facebook-login/dist/facebook-login-render-props":
+/***/ (function(module, exports) {
+
+module.exports = require("react-facebook-login/dist/facebook-login-render-props");
 
 /***/ }),
 

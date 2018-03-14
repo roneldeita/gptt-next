@@ -2,5 +2,23 @@
   margin-top: 50px
 }
 .title{
-  font-size: 18px
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.googleButton{
+  width:100%;
+  height:auto;
+  padding:10px 0px;
+  margin-bottom: 25px;
+  color: #444;
+  border:thin solid #888888;
+}
+.facebookButton{
+  width:100%;
+  height:auto;
+  padding:10px 0px;
+  margin-bottom: 25px;
+  color: #444;
+  border:thin solid #3b5998;
 }
