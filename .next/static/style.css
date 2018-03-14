@@ -1,6 +1,5 @@
 ._2IBNTE97Wx1jHG9Wpw7dAx{
   width: 155px;
-  margin-bottom: -15px;
 }
 ._3mib_rM7i3TbBEVHAQKnF{
   font-size: 14px;
@@ -14,18 +13,32 @@
 ._2IM6-IovahmEIeJNt8OffY{
   float:right
 }
-._2-PNWLjVSkLVKgEdqYWdGj {
-  border: 1px solid #000000
-}
-.yg-yXOZir1jGv1eF_xMd8{
-  font-size: 21px;
-  font-weight: 500
+.xDNtRBi4yhY38VscFqtEx{
+  min-height: 80vh
 }
 .dlPnzszP8HqAHJ8UjL23c{
   margin-top: 50px
 }
 .C7D9zTSw5dC-Ief5PLbW_{
-  font-size: 18px
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+._6Hz5sgn_OaWlw_nHOa_Lg{
+  width:100%;
+  height:auto;
+  padding:10px 0px;
+  margin-bottom: 25px;
+  color: #444;
+  border:thin solid #888888;
+}
+._3KKL4Em2__lH8hCTBXicV5{
+  width:100%;
+  height:auto;
+  padding:10px 0px;
+  margin-bottom: 25px;
+  color: #444;
+  border:thin solid #3b5998;
 }
 
 /*# sourceMappingURL=style.css.map*/

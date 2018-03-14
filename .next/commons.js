@@ -16767,11 +16767,11 @@ module.exports = react;
 
 /***/ }),
 
-/***/ "./static/css/index.css":
+/***/ "./static/css/layout.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"border":"_2-PNWLjVSkLVKgEdqYWdGj","title":"yg-yXOZir1jGv1eF_xMd8"};;
+module.exports = {"layout":"xDNtRBi4yhY38VscFqtEx"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16794,7 +16794,7 @@ module.exports = {"border":"_2-PNWLjVSkLVKgEdqYWdGj","title":"yg-yXOZir1jGv1eF_x
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1520916927170");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521020902488");
           });
       }
     }
@@ -16806,7 +16806,7 @@ module.exports = {"border":"_2-PNWLjVSkLVKgEdqYWdGj","title":"yg-yXOZir1jGv1eF_x
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"container":"dlPnzszP8HqAHJ8UjL23c","title":"C7D9zTSw5dC-Ief5PLbW_"};;
+module.exports = {"container":"dlPnzszP8HqAHJ8UjL23c","title":"C7D9zTSw5dC-Ief5PLbW_","googleButton":"_6Hz5sgn_OaWlw_nHOa_Lg","facebookButton":"_3KKL4Em2__lH8hCTBXicV5"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16829,7 +16829,7 @@ module.exports = {"container":"dlPnzszP8HqAHJ8UjL23c","title":"C7D9zTSw5dC-Ief5P
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1520932528077");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521020902495");
           });
       }
     }
@@ -16864,7 +16864,7 @@ module.exports = {"logo":"_2IBNTE97Wx1jHG9Wpw7dAx","menuContainer":"_3mib_rM7i3T
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1520916927176");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521020902498");
           });
       }
     }
