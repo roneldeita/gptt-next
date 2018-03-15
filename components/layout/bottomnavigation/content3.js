@@ -1,7 +1,7 @@
 import { Row, Col } from 'antd'
 
-export default () => {
-  return(
+export default () => 
+
     <div>
       <Row type="flex" justify="left" >
         <Row>
@@ -23,8 +23,7 @@ export default () => {
        </Row>
      
     </div>
-  )
-}
+
 const txtwhite ={
   color:"#ffffff",
   marginTop:'50px'

@@ -16771,7 +16771,7 @@ module.exports = react;
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"layout":"xDNtRBi4yhY38VscFqtEx"};;
+module.exports = {"layout":"H5nxLdYIDtRQblnPQIpVr"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16794,42 +16794,7 @@ module.exports = {"layout":"xDNtRBi4yhY38VscFqtEx"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1521020902488");
-          });
-      }
-    }
-  
-
-/***/ }),
-
-/***/ "./static/css/login-form.css":
-/***/ (function(module, exports, __webpack_require__) {
-
-// removed by extract-text-webpack-plugin
-module.exports = {"container":"dlPnzszP8HqAHJ8UjL23c","title":"C7D9zTSw5dC-Ief5PLbW_","googleButton":"_6Hz5sgn_OaWlw_nHOa_Lg","facebookButton":"_3KKL4Em2__lH8hCTBXicV5"};;
-    if (true) {
-      var injectCss = function injectCss(prev, href) {
-        var link = prev.cloneNode();
-        link.href = href;
-        link.onload = link.onerror = function() {
-          prev.parentNode.removeChild(prev);
-        };
-        prev.stale = true;
-        prev.parentNode.insertBefore(link, prev.nextSibling);
-      };
-      module.hot.dispose(function() {
-        window.__webpack_reload_css__ = true;
-      });
-      module.hot.accept();
-      if (window.__webpack_reload_css__) {
-        module.hot.__webpack_reload_css__ = false;
-        console.log("[HMR] Reloading stylesheets...");
-        var prefix = document.location.protocol + '//' + document.location.host;
-        document
-          .querySelectorAll("link[href][rel=stylesheet]")
-          .forEach(function(link) {
-            if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1521020902495");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521083665504");
           });
       }
     }
@@ -16841,7 +16806,7 @@ module.exports = {"container":"dlPnzszP8HqAHJ8UjL23c","title":"C7D9zTSw5dC-Ief5P
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"logo":"_2IBNTE97Wx1jHG9Wpw7dAx","menuContainer":"_3mib_rM7i3TbBEVHAQKnF","affix":"_3dm03J9HFxRi_Kmc7pMuKK","authTab":"_2IM6-IovahmEIeJNt8OffY"};;
+module.exports = {"logo":"_1lo9IBi1AaTSXsWMvg86sv","menuContainer":"_3IUeB_lgcTygjKU3IC6etA","affix":"_3T_e1i0RfPI8sqUD5DXfwh","authTab":"_1QgE0GQk-puUW0Y8p_-uxf"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16864,7 +16829,7 @@ module.exports = {"logo":"_2IBNTE97Wx1jHG9Wpw7dAx","menuContainer":"_3mib_rM7i3T
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1521020902498");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521083665506");
           });
       }
     }

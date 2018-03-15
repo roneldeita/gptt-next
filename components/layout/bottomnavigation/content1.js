@@ -1,8 +1,6 @@
-import React from 'react'
 import { Row, Col  } from 'antd'
 
-const Content = () => {
-  return(
+export default () => 
     <div>
       <Row type="flex" justify="center" style={{marginTop:"50px"}}>
         <Row type="flex" justify="space-between">
@@ -24,7 +22,4 @@ const Content = () => {
       </Row>
      
     </div>
-  )
-}
 
-export default Content

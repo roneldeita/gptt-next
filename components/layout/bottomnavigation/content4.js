@@ -1,12 +1,10 @@
-
 import { Row, Col,Icon } from 'antd'
 
 const txtwhite ={
   color:"#ffffff",
 }
 
-export default () => {
-  return(
+export default () => 
     <div>
       <Row type="flex">
         <h2 style={{color:"#ffffff",marginTop:'50px'}}>Download GPPT App</h2>
@@ -29,6 +27,5 @@ export default () => {
       </Row>
      
     </div>
-  )
-}
+
 
