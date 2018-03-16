@@ -1,0 +1,98 @@
+.fontwhite{
+  color:#ffffff;
+}
+.fontdarkgrey{
+  color:#5c5e63;
+}
+.fontdirtywhite{
+  color:#818387;
+}
+
+
+.bottomlogo{
+	 width:50px;
+ max-width:50px;
+}
+
+.bottom{
+	background-color:#191d21;
+}
+.padding{
+	padding-bottom:50px;
+}
+
+.copyright{
+	color:white; 
+	text-align:center; 
+	background-color:white; 
+	padding-top:5px;
+}
+.copyright h4{
+	color:#3f3f3f;
+}
+
+.content1 h2{
+	padding-bottom:10px;
+	color:#ffffff
+}
+.content1 h5{
+	color:#818387;
+}
+.content1 h4{
+	color:#ffffff;
+}
+.padding20 {
+	padding-top:20px;
+}
+.globalpinoylogo {
+	padding-bottom:30px;
+	width:100%;
+	max-width:200px; 
+}
+.padding50 {
+	margin-top:50px
+}
+
+.margintop50 {
+	margin-top:50px;
+}
+.line {
+	margin-top:20px;
+	margin-bottom:15px;
+	border: 1px solid #5c5e63;
+}
+.width {
+	width:100%
+}
+.margintop16 {
+	margin-top:16px
+}
+
+.facebook {
+	color:#3B5998;
+	font-size: 30px;
+}
+.twitter {
+	color: #1DA1F2;
+	font-size: 30px;
+}
+.linkedin {
+	color: #0077B5;
+	font-size: 30px;
+}
+.googleplus {
+	color: #DB4437;
+	font-size: 30px;
+}
+
+.size100 {
+	width:100%;
+}
+
+.downloadlabel {
+	color:#ffffff;
+	margin-top:50px;
+}
+
+
+
