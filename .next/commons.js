@@ -16767,6 +16767,41 @@ module.exports = react;
 
 /***/ }),
 
+/***/ "./static/css/bottom-navigation.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"fontwhite":"an19VluUXIr8w0Mw3xZbZ","fontdarkgrey":"_2D43CHHCdwdLOJONy7DtRD","fontdirtywhite":"_3mnWHwZm66EkQDnPumrG3y","bottomlogo":"_1_a8RG918e2H_X0tcZn8kG","bottom":"_1JRVjFB2wYFLo1tMCF3jke","padding":"YWwAH3ilxGY12JJcEzGcH","copyright":"_85peaQfBOMqX_ygdoxk4f","content1":"cQpzpCzG0TkW9XkITjoTT","padding20":"_2OXE_YRmt_SKdY8huM_C7l","globalpinoylogo":"_8ZHHwCIETjptE7VNowFSx","padding50":"m_yFB4ORtjY5qVtbz9OSA","margintop50":"TuC3GJSoHj5FqzfbJNeyR","line":"_3oGclf9Ne5KsmJPE4CsQxZ","width":"_37B07TKzHFil7uwyRG6CCO","margintop16":"_1bva07eX1naJYCCW2mRgkN","facebook":"_2UFOuK1J89Erbesgi7OgzI","twitter":"_1c-ZhSsOYAUErN8S6N1bId","linkedin":"_2np96p-IAOCPNStk9bSooz","googleplus":"_19y25vsWbruiGEcDE2ysi4","size100":"w-pib5vg47gzYPMx_JN2o","downloadlabel":"_3q-Xoe40o17zjoy7WzeC4H"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = link.onerror = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev.nextSibling);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      module.hot.accept();
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1521166079099");
+          });
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "./static/css/layout.css":
 /***/ (function(module, exports, __webpack_require__) {
 

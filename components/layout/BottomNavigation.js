@@ -1,39 +1,34 @@
 import { Row, Col  } from 'antd'
+import css from '../../static/css/bottom-navigation.css'
+import Content1 from './presentation/bottomcontents/Content1'
+import Content2 from './presentation/bottomcontents/Content2'
+import Content3 from './presentation/bottomcontents/Content3'
+import Content4 from './presentation/bottomcontents/Content4'
 
-import Content1 from './bottomnavigation/content1'
-import Content2 from './bottomnavigation/content2'
-import Content3 from './bottomnavigation/content3'
-import Content4 from './bottomnavigation/content4'
-
-const styles = {
-	  margintop: "50px",
-         minheight: "500px",
-         paddingBottom:"50px",
-}
-
-export default () => (
-  <div>
-      <Row type="flex" justify="center" style={{backgroundColor:'#191d21'}}>
+const message = "Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserved."
+export default () => 
+  <div className={css.bottom}>
+      <Row type="flex" justify="center" >
         <Col className="" xs={20} md={16}>
-          <Row gutter={80} style={{ paddingBottom:"50px"}} type="flex" justify="center">
+          <Row gutter={80} className={css.padding} type="flex" justify="center">
             <Col sm={24} md={6}>
             	<Content1/>
             </Col>
             <Col sm={24} md={6}>
-				<Content2/>
+				      <Content2/>
             </Col>
             <Col sm={24} md={6}>
-				<Content3/>
+				      <Content3/>
             </Col>
             <Col sm={24} md={6}>
-				<Content4/>
+				      <Content4/>
             </Col>
           </Row>
         </Col>
-        <Col span={24} style={{color:'white', textAlign:'center', backgroundColor:'white', paddingTop:'5px'}}>
-            <h4 style={{ color:"#3f3f3f"}}>Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserved.</h4>
+        <Col span={24} className={css.copyright}>
+            <h4>{message}</h4>
         </Col>
       </Row>
 
-    </div>
-)
+  </div>
+
