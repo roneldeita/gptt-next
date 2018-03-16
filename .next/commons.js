@@ -16771,7 +16771,7 @@ module.exports = react;
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"fontwhite":"_2yXuFxh_hpT-oYZTX0n1iC","fontdarkgrey":"_1-UlKJ2iRRbTVvlvAMOwgB","fontdirtywhite":"_1JToTvuP8_2TAgywyGIaF_","bottomlogo":"_2VfYF4dkxW_VlpXEotPuLd","bottom":"_3PhndLb-diu__crejYad3T","padding":"YNQ-u0Fm9hlVjxmOqAweJ","copyright":"_2tsH3BLn6ESnLEe7nKW3Jp","content1":"_2HcIJ_fk4HRw4_VyD0h9-N","padding20":"_3WIrEqsLKqjI9QBsbBx78K","globalpinoylogo":"_1cdDArN6K2c7sYA3yGOubg","padding50":"_2CgfpdcVKYd8tohoU9prI0","margintop50":"_1WD0yUGm8sGBFbW-V5vrNw","line":"_35tF26Ji_HhwhZuzEoiFua","width":"_2zJIsOEIKgExHiCZRtE9vz","margintop16":"_15COiSskFCXrcldyDiWpk5","facebook":"_13R7jKIPe78an0A9vAIpXZ","twitter":"lPNNNeSh1ih2B00uADVz6","linkedin":"_2kErrHLpteByid_SGW4KEy","googleplus":"_3bxc2YziUNgxBK_TzNOLIF","size100":"_1Rn1qsO9e0qK7kKzANMU3","downloadlabel":"_1ofOfQ-j0Ut-srtUmYDIUo"};;
+module.exports = {"fontwhite":"an19VluUXIr8w0Mw3xZbZ","fontdarkgrey":"_2D43CHHCdwdLOJONy7DtRD","fontdirtywhite":"_3mnWHwZm66EkQDnPumrG3y","bottomlogo":"_1_a8RG918e2H_X0tcZn8kG","bottom":"_1JRVjFB2wYFLo1tMCF3jke","padding":"YWwAH3ilxGY12JJcEzGcH","copyright":"_85peaQfBOMqX_ygdoxk4f","content1":"cQpzpCzG0TkW9XkITjoTT","padding20":"_2OXE_YRmt_SKdY8huM_C7l","globalpinoylogo":"_8ZHHwCIETjptE7VNowFSx","padding50":"m_yFB4ORtjY5qVtbz9OSA","margintop50":"TuC3GJSoHj5FqzfbJNeyR","line":"_3oGclf9Ne5KsmJPE4CsQxZ","width":"_37B07TKzHFil7uwyRG6CCO","margintop16":"_1bva07eX1naJYCCW2mRgkN","facebook":"_2UFOuK1J89Erbesgi7OgzI","twitter":"_1c-ZhSsOYAUErN8S6N1bId","linkedin":"_2np96p-IAOCPNStk9bSooz","googleplus":"_19y25vsWbruiGEcDE2ysi4","size100":"w-pib5vg47gzYPMx_JN2o","downloadlabel":"_3q-Xoe40o17zjoy7WzeC4H"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16794,7 +16794,7 @@ module.exports = {"fontwhite":"_2yXuFxh_hpT-oYZTX0n1iC","fontdarkgrey":"_1-UlKJ2
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1521158536826");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521166079099");
           });
       }
     }
@@ -16806,7 +16806,7 @@ module.exports = {"fontwhite":"_2yXuFxh_hpT-oYZTX0n1iC","fontdarkgrey":"_1-UlKJ2
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"layout":"H5nxLdYIDtRQblnPQIpVr"};;
+module.exports = {"layout":"xDNtRBi4yhY38VscFqtEx"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16829,7 +16829,42 @@ module.exports = {"layout":"H5nxLdYIDtRQblnPQIpVr"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1521157730214");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521166007292");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./static/css/login-form.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+// removed by extract-text-webpack-plugin
+module.exports = {"container":"dlPnzszP8HqAHJ8UjL23c","title":"C7D9zTSw5dC-Ief5PLbW_","googleButton":"_6Hz5sgn_OaWlw_nHOa_Lg","facebookButton":"_3KKL4Em2__lH8hCTBXicV5"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = link.onerror = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev.nextSibling);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      module.hot.accept();
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1521166014421");
           });
       }
     }
@@ -16841,7 +16876,7 @@ module.exports = {"layout":"H5nxLdYIDtRQblnPQIpVr"};;
 /***/ (function(module, exports, __webpack_require__) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"logo":"_1lo9IBi1AaTSXsWMvg86sv","menuContainer":"_3IUeB_lgcTygjKU3IC6etA","affix":"_3T_e1i0RfPI8sqUD5DXfwh","authTab":"_1QgE0GQk-puUW0Y8p_-uxf"};;
+module.exports = {"logo":"_2IBNTE97Wx1jHG9Wpw7dAx","menuContainer":"_3mib_rM7i3TbBEVHAQKnF","affix":"_3dm03J9HFxRi_Kmc7pMuKK","authTab":"_2IM6-IovahmEIeJNt8OffY"};;
     if (true) {
       var injectCss = function injectCss(prev, href) {
         var link = prev.cloneNode();
@@ -16864,7 +16899,7 @@ module.exports = {"logo":"_1lo9IBi1AaTSXsWMvg86sv","menuContainer":"_3IUeB_lgcTy
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1521157730216");
+            injectCss(link, link.href.split("?")[0] + "?unix=1521166007300");
           });
       }
     }

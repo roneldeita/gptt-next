@@ -1,4 +1,4 @@
-import { Form, Input, Row, Col, Icon, Card } from 'antd'
+import { Form, Input, Row, Col, Icon, Card, Button } from 'antd'
 import GoogleLogin from 'react-google-login'
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 
@@ -11,8 +11,8 @@ const googleButtonStyle = {
   height:'auto',
   padding:'10px 0px',
   marginBottom: '25px',
-  color: '#444444',
-  border:'thin solid #888888'
+  color: '#757575',
+  border:'1px solid #cccccc'
 }
 const facebookButtonStyle = {
   width:'100%',
@@ -22,53 +22,77 @@ const facebookButtonStyle = {
   color: '#ffffff',
   backgroundColor:'#3b5998'
 }
+const GoogleLogo = {
+  width:'15px',
+  marginBottom:'3px'
+}
 
-export default ({form, onSubmit, responseGoogle, responseFacebook}) => (
-  <div className={css.container}>
-    <Row type="flex" justify="center" gutter={20} style={{margin:0}}>
-      <Col xs={24} sm={24} md={12} lg={7}>
-        <Card>
-          <p className={css.title}>Start emmediately using your social account</p>
-          <p><Icon type="rocket"/> No more email validation.</p><br/>
-          <GoogleLogin
-            style={googleButtonStyle}
-            className="ant-btn"
-            clientId="260337772129-ff01h5ua9ob0fvf5vik7c0und2279776.apps.googleusercontent.com"
-            onSuccess={responseGoogle}
-            onFailure={responseGoogle}
-          ><Icon type="google"/> Login with Google
-          </GoogleLogin>
-          <FacebookLogin
-            appId="199102420673819"
-            autoLoad={false}
-            callback={responseFacebook}
-            id="facebook-button"
-            render={renderProps => (
-              <button onClick={renderProps.onClick} className="ant-btn" style={facebookButtonStyle}><Icon type="facebook"/> Login with Facebook</button>
-            )}
-          />
-        </Card>
-      </Col>
-      <Col xs={24} sm={24} md={12} lg={7}>
-        <Card>
-          <p className={css.title}>Login using your email</p><br/>
-          <Form onSubmit={onSubmit}>
-            <FormItem
-              hasFeedback={form.isFieldTouched('Email')}
-              validateStatus={form.getFieldError('Email') ? 'error' : 'success'}
-              help={form.getFieldError('Email') || ''}>
-              {form.getFieldDecorator('Email', {
-                rules: [
-                  { required: true },
-                  { type: 'email' }
-                ],
-              })(
-                <Input placeholder="Email" size="large" prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} /> }/>
+export default ({form, onSubmit, onClick, loginState, responseGoogle, responseFacebook}) => {
+  const { isFieldTouched, getFieldError, getFieldDecorator } = form
+  return (
+    <div className={css.container}>
+      <Row type="flex" justify="center" gutter={20} style={{margin:0}}>
+        <Col xs={24} sm={24} md={12} lg={7}>
+          <Card>
+            <p className={css.title}>Start emmediately using your social account</p>
+            <p><Icon type="rocket"/> No more email validation.</p><br/>
+            <GoogleLogin
+              style={googleButtonStyle}
+              className="ant-btn"
+              clientId={process.env.GOOGLE_CLIENT_ID}
+              onSuccess={responseGoogle}
+              onFailure={responseGoogle}
+            ><img src="/static/images/google-1015752_960_720.png" style={GoogleLogo} /> Login with Google
+            </GoogleLogin>
+            <FacebookLogin
+              appId={process.env.FACEBOOK_APP_ID}
+              autoLoad={false}
+              callback={responseFacebook}
+              id="facebook-button"
+              render={renderProps => (
+                <Button onClick={renderProps.onClick} className="ant-btn" style={facebookButtonStyle}><Icon type="facebook"/> Login with Facebook</Button>
               )}
-            </FormItem>
-          </Form>
-        </Card>
-      </Col>
-    </Row>
-  </div>
-)
+            />
+          </Card>
+        </Col>
+        <Col xs={24} sm={24} md={12} lg={7}>
+          <Card>
+            <p className={css.title}>Login using your email</p><br/>
+            <Form onSubmit={onSubmit}>
+              <FormItem
+                hasFeedback={isFieldTouched('Email')}
+                validateStatus={getFieldError('Email') ? 'error' : 'success'}
+                help={getFieldError('Email') || ''}>
+                {getFieldDecorator('Email', {
+                  rules: [
+                    { required: true },
+                    { type: 'email' }
+                  ],
+                })(
+                  <Input placeholder="Email" size="large"/>
+                )}
+              </FormItem>
+              <FormItem
+                hasFeedback={isFieldTouched('Password')}
+                validateStatus={getFieldError('Password') ? 'error' : 'success'}
+                help={getFieldError('Password') || ''}>
+                {getFieldDecorator('Password', {
+                  rules: [
+                    { required: true },
+                    { min: 6}
+                  ],
+                })(
+                  <Input placeholder="Password" type="password" size="large"/>
+                )}
+              </FormItem>
+              <FormItem>
+                <Button type="primary" size="large" htmlType="submit" loading={loginState} onClick={onClick} style={{marginRight:'8px'}}>Log in</Button>
+                <p style={{display:'inline-block'}}>No account yet? <a href='/register'> Register</a></p>
+              </FormItem>
+            </Form>
+          </Card>
+        </Col>
+      </Row>
+    </div>
+  )
+}

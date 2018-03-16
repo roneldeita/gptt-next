@@ -72,18 +72,18 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
-/***/ "/Users/gprs/Documents/gptt-next/node_modules/next/dist/pages/_error.js":
-/***/ (function(module, exports) {
-
-module.exports = require("/Users/gprs/Documents/gptt-next/node_modules/next/dist/pages/_error.js");
-
-/***/ }),
-
 /***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("/Users/gprs/Documents/gptt-next/node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__("C:\\Users\\ui\\Desktop\\gptt-next\\node_modules\\next\\dist\\pages\\_error.js");
 
+
+/***/ }),
+
+/***/ "C:\\Users\\ui\\Desktop\\gptt-next\\node_modules\\next\\dist\\pages\\_error.js":
+/***/ (function(module, exports) {
+
+module.exports = require("C:\\Users\\ui\\Desktop\\gptt-next\\node_modules\\next\\dist\\pages\\_error.js");
 
 /***/ })
 

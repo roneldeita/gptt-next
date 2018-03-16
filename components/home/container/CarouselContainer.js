@@ -5,6 +5,7 @@ class CarouselContainer extends React.Component {
   constructor(props){
     super(props)
     this.state = {
+      loader: true,
       carousel:[
         { img:'../static/images/banner/el-nido.jpg', slogan:'If not now, when?' },
         { img:'../static/images/banner/coastal.jpg', slogan:'Just Go!' },
@@ -12,9 +13,14 @@ class CarouselContainer extends React.Component {
       ]
     }
   }
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({loader:false})
+    }, 800)
+  }
   render(){
     return(
-      <Carousel carousel={this.state.carousel}/>
+      <Carousel loader={this.state.loader} carousel={this.state.carousel}/>
     )
   }
 }
