@@ -221,10 +221,12 @@ var renderCarouselItem = function renderCarouselItem(item, index) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bottomnavigation_content1__ = __webpack_require__("./components/layout/bottomnavigation/content1.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bottomnavigation_content2__ = __webpack_require__("./components/layout/bottomnavigation/content2.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bottomnavigation_content3__ = __webpack_require__("./components/layout/bottomnavigation/content3.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bottomnavigation_content4__ = __webpack_require__("./components/layout/bottomnavigation/content4.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__ = __webpack_require__("./static/css/bottom-navigation.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__presentation_bottomcontents_Content1__ = __webpack_require__("./components/layout/presentation/bottomcontents/Content1.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__presentation_bottomcontents_Content2__ = __webpack_require__("./components/layout/presentation/bottomcontents/Content2.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__presentation_bottomcontents_Content3__ = __webpack_require__("./components/layout/presentation/bottomcontents/Content3.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__presentation_bottomcontents_Content4__ = __webpack_require__("./components/layout/presentation/bottomcontents/Content4.js");
 var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/BottomNavigation.js';
 
 
@@ -234,95 +236,89 @@ var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/BottomNavi
 
 
 
-var styles = {
-  margintop: "50px",
-  minheight: "500px",
-  paddingBottom: "50px"
-};
-
+var message = "Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserved.";
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
-    {
-      __source: {
+    { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottom, __source: {
         fileName: _jsxFileName,
-        lineNumber: 15
+        lineNumber: 10
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { type: 'flex', justify: 'center', style: { backgroundColor: '#191d21' }, __source: {
+      { type: 'flex', justify: 'center', __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 11
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
         { className: '', xs: 20, md: 16, __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 12
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-          { gutter: 80, style: { paddingBottom: "50px" }, type: 'flex', justify: 'center', __source: {
+          { gutter: 80, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.padding, type: 'flex', justify: 'center', __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 13
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
             { sm: 24, md: 6, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 19
+                lineNumber: 14
               }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__bottomnavigation_content1__["a" /* default */], {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__presentation_bottomcontents_Content1__["a" /* default */], {
               __source: {
+                fileName: _jsxFileName,
+                lineNumber: 15
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { sm: 24, md: 6, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 17
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__presentation_bottomcontents_Content2__["a" /* default */], {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 18
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { sm: 24, md: 6, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 20
               }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__presentation_bottomcontents_Content3__["a" /* default */], {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 21
+              }
             })
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
             { sm: 24, md: 6, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 22
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__bottomnavigation_content2__["a" /* default */], {
-              __source: {
                 fileName: _jsxFileName,
                 lineNumber: 23
               }
-            })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { sm: 24, md: 6, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 25
-              }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__bottomnavigation_content3__["a" /* default */], {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__presentation_bottomcontents_Content4__["a" /* default */], {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 26
-              }
-            })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { sm: 24, md: 6, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 28
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__bottomnavigation_content4__["a" /* default */], {
-              __source: {
-                fileName: _jsxFileName,
-                lineNumber: 29
+                lineNumber: 24
               }
             })
           )
@@ -330,19 +326,20 @@ var styles = {
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 24, style: { color: 'white', textAlign: 'center', backgroundColor: 'white', paddingTop: '5px' }, __source: {
+        { span: 24, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.copyright, __source: {
             fileName: _jsxFileName,
-            lineNumber: 33
+            lineNumber: 28
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           'h4',
-          { style: { color: "#3f3f3f" }, __source: {
+          {
+            __source: {
               fileName: _jsxFileName,
-              lineNumber: 34
+              lineNumber: 29
             }
           },
-          'Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserved.'
+          message
         )
       )
     )
@@ -729,7 +726,7 @@ var SubMenu = __WEBPACK_IMPORTED_MODULE_3_antd__["Menu"].SubMenu;
 
 /***/ }),
 
-/***/ "./components/layout/bottomnavigation/content1.js":
+/***/ "./components/layout/presentation/bottomcontents/Content1.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -737,314 +734,166 @@ var SubMenu = __WEBPACK_IMPORTED_MODULE_3_antd__["Menu"].SubMenu;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/layout/bottomnavigation/content1.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__ = __webpack_require__("./static/css/bottom-navigation.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__);
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/presentation/bottomcontents/Content1.js';
 
 
 
+var globalPinoyLogo = '../../../../static/images/globalpinoytravel-White.png';
+var secureLogo = '../../../../static/images/Sec_Ass-01.png';
+var IATALogo = '../../../../static/images/IATA-01.png';
+var hrsLogo = '../../../../static/images/24HR-01.png';
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    "div",
-    {
-      __source: {
+    'div',
+    { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.content1, __source: {
         fileName: _jsxFileName,
-        lineNumber: 4
+        lineNumber: 8
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { type: "flex", justify: "center", style: { marginTop: "50px" }, __source: {
+      { type: 'flex', justify: 'center', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.padding50, __source: {
           fileName: _jsxFileName,
-          lineNumber: 5
+          lineNumber: 9
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-        { type: "flex", justify: "space-between", __source: {
+        { type: 'flex', justify: 'space-between', __source: {
             fileName: _jsxFileName,
-            lineNumber: 6
+            lineNumber: 10
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-          { style: { paddingBottom: "30px" }, span: 24, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 7
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "globalpinoytravel-White", src: '../../../static/images/globalpinoytravel-White.png', style: { width: "100%", maxWidth: "200px" }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 7
-            }
-          })
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-          { span: 8, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 8
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Sec_Ass-01", src: '../../../static/images/Sec_Ass-01.png', style: { width: "50%", maxWidth: '50px' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 8
-            }
-          })
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-          { span: 8, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 9
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "IATA-01", src: '../../../static/images/IATA-01.png', style: { width: "50%", maxWidth: '50px' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 9
-            }
-          })
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-          { span: 8, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 10
-            }
-          },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "24HR-01", src: '../../../static/images/24HR-01.png', style: { width: "50%", maxWidth: '50px' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 10
-            }
-          })
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { style: { paddingTop: "20px" }, span: 24, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h2",
-          { style: { paddingBottom: '10px', color: "#ffffff" }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 14
-            }
-          },
-          "Customer Service"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h4",
-          { style: { color: "#ffffff" }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 15
-            }
-          },
-          "+63-9XX-XXX-XXXX"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: { color: '#818387' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 16
-            }
-          },
-          "Email:support@mygprs.com"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: { color: '#818387' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 17
-            }
-          },
-          "Address: Floor,St.,Barangay,Quezon City"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: { color: '#818387' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 18
-            }
-          },
-          "Metro Manila Philippines 1000"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: { color: '#818387' }, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 19
-            }
-          },
-          "Offic Hours: Monday-Friday 8 30am -6 30pm"
-        )
-      )
-    )
-  );
-});
-
-/***/ }),
-
-/***/ "./components/layout/bottomnavigation/content2.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/layout/bottomnavigation/content2.js";
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    "div",
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 4
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { type: "flex", justify: "center", __source: {
-          fileName: _jsxFileName,
-          lineNumber: 5
-        }
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 24, style: { marginTop: '50px' }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 6
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h2",
-          { style: txtwhite, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 7
-            }
-          },
-          "Latest News"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h4",
-          { style: txtsemiwhite, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 8
-            }
-          },
-          "Water & Rock Discovering the beauty of Oslob,Cebu"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: txtdate, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 9
-            }
-          },
-          "05.04.2018"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: txtsemiwhite, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 10
-            }
-          },
-          " "
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: { marginTop: "20px", marginBottom: "15px" }, className: "border", __source: {
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.globalpinoylogo, span: 24, __source: {
               fileName: _jsxFileName,
               lineNumber: 11
             }
           },
-          " "
-        )
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 24, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13
-          }
-        },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'globalpinoytravel-White', src: globalPinoyLogo, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 11
+            }
+          })
+        ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h4",
-          { style: txtsemiwhite, __source: {
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { span: 8, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 12
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Secure Logo', src: secureLogo, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottomlogo, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 12
+            }
+          })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { span: 8, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 13
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'IATA Logo', src: IATALogo, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottomlogo, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 13
+            }
+          })
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { span: 8, __source: {
               fileName: _jsxFileName,
               lineNumber: 14
             }
           },
-          "Water & Rock Discovering the beauty of Oslob,Cebu"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: txtdate, __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '24HR Logo', src: hrsLogo, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottomlogo, __source: {
               fileName: _jsxFileName,
-              lineNumber: 15
+              lineNumber: 14
             }
-          },
-          "05.04.2018"
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: { marginTop: "20px", marginBottom: "15px" }, className: "border", __source: {
-              fileName: _jsxFileName,
-              lineNumber: 16
-            }
-          },
-          " "
+          })
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 24, __source: {
+        { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.padding20, span: 24, __source: {
             fileName: _jsxFileName,
-            lineNumber: 18
+            lineNumber: 17
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h4",
-          { style: txtsemiwhite, __source: {
+          'h2',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 18
+            }
+          },
+          'Customer Service'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          {
+            __source: {
               fileName: _jsxFileName,
               lineNumber: 19
             }
           },
-          "Water & Rock Discovering the beauty of Oslob,Cebu"
+          '+63-9XX-XXX-XXXX'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h5",
-          { style: txtdate, __source: {
+          'h5',
+          {
+            __source: {
               fileName: _jsxFileName,
               lineNumber: 20
             }
           },
-          "05.04.2018"
+          'Email:support@mygprs.com'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          'Address: Floor,St.,Barangay,Quezon City'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 22
+            }
+          },
+          'Metro Manila Philippines 1000'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 23
+            }
+          },
+          'Offic Hours: Monday-Friday 8 30am -6 30pm'
         )
       )
     )
   );
 });
 
-var txtwhite = {
-  color: "#ffffff"
-};
-
-var txtdate = {
-  color: "#5c5e63"
-};
-var txtsemiwhite = {
-  color: "#818387"
-};
-
 /***/ }),
 
-/***/ "./components/layout/bottomnavigation/content3.js":
+/***/ "./components/layout/presentation/bottomcontents/Content2.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1052,13 +901,16 @@ var txtsemiwhite = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/layout/bottomnavigation/content3.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__ = __webpack_require__("./static/css/bottom-navigation.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__);
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/presentation/bottomcontents/Content2.js';
+
 
 
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    "div",
+    'div',
     {
       __source: {
         fileName: _jsxFileName,
@@ -1067,143 +919,132 @@ var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/layout/bottomnavi
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { type: "flex", justify: "left", __source: {
+      { type: 'flex', justify: 'center', __source: {
           fileName: _jsxFileName,
           lineNumber: 6
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-        {
-          __source: {
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+        { span: 24, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.margintop50, __source: {
             fileName: _jsxFileName,
             lineNumber: 7
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h2",
-          { style: txtwhite, __source: {
+          'h2',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontwhite, __source: {
               fileName: _jsxFileName,
               lineNumber: 8
             }
           },
-          "Gallery"
+          'Latest News'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdirtywhite, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 9
+            }
+          },
+          'Water & Rock Discovering the beauty of Oslob,Cebu'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdarkgrey, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 10
+            }
+          },
+          '05.04.2018'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdirtywhite, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 11
+            }
+          },
+          ' '
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.line, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 12
+            }
+          },
+          ' '
         )
-      )
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { gutter: 12, style: { marginTop: '16px' }, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 12
-        }
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 12, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Image1", src: 'http://via.placeholder.com/140x100', style: { width: "100%" }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 13
-          }
-        })
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 12, __source: {
+        { span: 24, __source: {
             fileName: _jsxFileName,
             lineNumber: 14
           }
         },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Image2", src: 'http://via.placeholder.com/140x100', style: { width: "100%" }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 14
-          }
-        })
-      )
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { gutter: 12, style: { marginTop: '16px' }, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 16
-        }
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 12, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 17
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Image3", src: 'http://via.placeholder.com/140x100', style: { width: "100%" }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 17
-          }
-        })
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdirtywhite, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 15
+            }
+          },
+          'Water & Rock Discovering the beauty of Oslob,Cebu'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdarkgrey, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 16
+            }
+          },
+          '05.04.2018'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.line, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 17
+            }
+          },
+          ' '
+        )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 12, __source: {
+        { span: 24, __source: {
             fileName: _jsxFileName,
-            lineNumber: 18
+            lineNumber: 19
           }
         },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Image4", src: 'http://via.placeholder.com/140x100', style: { width: "100%" }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 18
-          }
-        })
-      )
-    ),
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { gutter: 12, style: { marginTop: '16px' }, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        }
-      },
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 12, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Image5", src: 'http://via.placeholder.com/140x100', style: { width: "100%" }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 21
-          }
-        })
-      ),
-      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-        { span: 12, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          }
-        },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Image6", src: 'http://via.placeholder.com/140x100', style: { width: "100%" }, __source: {
-            fileName: _jsxFileName,
-            lineNumber: 22
-          }
-        })
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h4',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdirtywhite, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 20
+            }
+          },
+          'Water & Rock Discovering the beauty of Oslob,Cebu'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h5',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontdarkgrey, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 21
+            }
+          },
+          ' 05.04.2018'
+        )
       )
     )
   );
 });
 
-var txtwhite = {
-  color: "#ffffff",
-  marginTop: '50px'
-};
-
 /***/ }),
 
-/***/ "./components/layout/bottomnavigation/content4.js":
+/***/ "./components/layout/presentation/bottomcontents/Content3.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1211,56 +1052,219 @@ var txtwhite = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
-var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/layout/bottomnavigation/content4.js";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__ = __webpack_require__("./static/css/bottom-navigation.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__);
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/presentation/bottomcontents/Content3.js';
 
 
 
-var txtwhite = {
-  color: "#ffffff"
-};
+var tempImage = 'http://via.placeholder.com/140x100';
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.margintop50, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 6
+            }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+            { type: 'flex', justify: 'left', __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 7
+                }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+                {
+                    __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 8
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    'h2',
+                    { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontwhite, __source: {
+                            fileName: _jsxFileName,
+                            lineNumber: 9
+                        }
+                    },
+                    'Gallery'
+                )
+            )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+            { gutter: 12, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.margintop16, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 12
+                }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+                { span: 12, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 13
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Image1', src: tempImage, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.width, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 13
+                    }
+                })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+                { span: 12, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 14
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Image2', src: tempImage, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.width, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 14
+                    }
+                })
+            )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+            { gutter: 12, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.margintop16, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 16
+                }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+                { span: 12, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 17
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Image3', src: tempImage, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.width, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 17
+                    }
+                })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+                { span: 12, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 18
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Image4', src: tempImage, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.width, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 18
+                    }
+                })
+            )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+            { gutter: 12, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.margintop16, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 20
+                }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+                { span: 12, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 21
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Image5', src: tempImage, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.width, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 21
+                    }
+                })
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+                { span: 12, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 22
+                    }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Image6', src: tempImage, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.width, __source: {
+                        fileName: _jsxFileName,
+                        lineNumber: 22
+                    }
+                })
+            )
+        )
+    );
+});
+
+/***/ }),
+
+/***/ "./components/layout/presentation/bottomcontents/Content4.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__ = __webpack_require__("./static/css/bottom-navigation.css");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css__);
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/presentation/bottomcontents/Content4.js';
+
+
+
+
+var android = '../../../static/images/Android.png';
+var apple = '../../../static/images/Apple.png';
+
+var label1 = "Download GPPT App";
+var label2 = "Connect with Global";
+var label3 = "Pinoy Travel & Tours";
 
 /* harmony default export */ __webpack_exports__["a"] = (function () {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    "div",
+    'div',
     {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 12
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { type: "flex", __source: {
+      { type: 'flex', __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
+          lineNumber: 13
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-        "h2",
-        { style: { color: "#ffffff", marginTop: '50px' }, __source: {
+        'h2',
+        { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.downloadlabel, __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 14
           }
         },
-        "Download GPPT App"
+        label1
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
         { gutter: 6, __source: {
             fileName: _jsxFileName,
-            lineNumber: 11
+            lineNumber: 15
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
           { span: 12, __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 16
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Android", src: '../../../static/images/Android.png', style: { width: "100%" }, __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Android googleplay', src: android, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.size100, __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 16
             }
           })
         ),
@@ -1268,97 +1272,97 @@ var txtwhite = {
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
           { span: 12, __source: {
               fileName: _jsxFileName,
-              lineNumber: 13
+              lineNumber: 17
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "Apple", src: '../../../static/images/Apple.png', style: { width: "100%" }, __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Apple app store', src: apple, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.size100, __source: {
               fileName: _jsxFileName,
-              lineNumber: 13
+              lineNumber: 17
             }
           })
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-        { style: { marginTop: '50px' }, __source: {
+        { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.margintop50, __source: {
             fileName: _jsxFileName,
-            lineNumber: 16
+            lineNumber: 19
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h2",
-          { style: txtwhite, __source: {
+          'h2',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontwhite, __source: {
               fileName: _jsxFileName,
-              lineNumber: 17
+              lineNumber: 20
             }
           },
-          "Connect with Global"
+          label2
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          "h2",
-          { style: txtwhite, __source: {
+          'h2',
+          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.fontwhite, __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 21
             }
           },
-          "Pinoy Travel & Tours"
+          label3
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
           { gutter: 6, __source: {
               fileName: _jsxFileName,
-              lineNumber: 19
+              lineNumber: 22
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
             { span: 6, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 20
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "facebook", style: { color: '#3B5998', fontSize: 30 }, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 20
-              }
-            })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { span: 6, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 21
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "twitter", style: { color: '#1DA1F2', fontSize: 30 }, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 21
-              }
-            })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { span: 6, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 22
-              }
-            },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "linkedin", style: { color: '#0077B5', fontSize: 30 }, __source: {
-                fileName: _jsxFileName,
-                lineNumber: 22
-              }
-            })
-          ),
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { span: 6, __source: {
-                fileName: _jsxFileName,
                 lineNumber: 23
               }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "google-plus", style: { color: '#DB4437', fontSize: 30 }, __source: {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'facebook', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.facebook, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 23
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { span: 6, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'twitter', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.twitter, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 24
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { span: 6, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'linkedin', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.linkedin, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 25
+              }
+            })
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { span: 6, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'google-plus', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.googleplus, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 26
               }
             })
           )
@@ -1401,6 +1405,35 @@ var _jsxFileName = '/Users/gprs/Documents/gptt-next/pages/index.js';
     })
   );
 });
+
+/***/ }),
+
+/***/ "./static/css/bottom-navigation.css":
+/***/ (function(module, exports) {
+
+module.exports = {
+	"fontwhite": "_2yXuFxh_hpT-oYZTX0n1iC",
+	"fontdarkgrey": "_1-UlKJ2iRRbTVvlvAMOwgB",
+	"fontdirtywhite": "_1JToTvuP8_2TAgywyGIaF_",
+	"bottomlogo": "_2VfYF4dkxW_VlpXEotPuLd",
+	"bottom": "_3PhndLb-diu__crejYad3T",
+	"padding": "YNQ-u0Fm9hlVjxmOqAweJ",
+	"copyright": "_2tsH3BLn6ESnLEe7nKW3Jp",
+	"content1": "_2HcIJ_fk4HRw4_VyD0h9-N",
+	"padding20": "_3WIrEqsLKqjI9QBsbBx78K",
+	"globalpinoylogo": "_1cdDArN6K2c7sYA3yGOubg",
+	"padding50": "_2CgfpdcVKYd8tohoU9prI0",
+	"margintop50": "_1WD0yUGm8sGBFbW-V5vrNw",
+	"line": "_35tF26Ji_HhwhZuzEoiFua",
+	"width": "_2zJIsOEIKgExHiCZRtE9vz",
+	"margintop16": "_15COiSskFCXrcldyDiWpk5",
+	"facebook": "_13R7jKIPe78an0A9vAIpXZ",
+	"twitter": "lPNNNeSh1ih2B00uADVz6",
+	"linkedin": "_2kErrHLpteByid_SGW4KEy",
+	"googleplus": "_3bxc2YziUNgxBK_TzNOLIF",
+	"size100": "_1Rn1qsO9e0qK7kKzANMU3",
+	"downloadlabel": "_1ofOfQ-j0Ut-srtUmYDIUo"
+};
 
 /***/ }),
 
