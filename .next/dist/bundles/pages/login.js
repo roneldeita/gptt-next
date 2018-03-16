@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -103,7 +103,14 @@ var LoginContainer = function (_React$Component) {
   function LoginContainer(props) {
     _classCallCheck(this, LoginContainer);
 
-    return _possibleConstructorReturn(this, (LoginContainer.__proto__ || Object.getPrototypeOf(LoginContainer)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (LoginContainer.__proto__ || Object.getPrototypeOf(LoginContainer)).call(this, props));
+
+    _this.state = {
+      loginState: false
+    };
+    _this.handleSubmit = _this.handleSubmit.bind(_this);
+    _this.handleOnClick = _this.handleOnClick.bind(_this);
+    return _this;
   }
 
   _createClass(LoginContainer, [{
@@ -117,18 +124,40 @@ var LoginContainer = function (_React$Component) {
       console.log(event);
     }
   }, {
+    key: 'handleOnClick',
+    value: function handleOnClick(event) {
+      this.setState({ loginState: true });
+    }
+  }, {
     key: 'handleSubmit',
     value: function handleSubmit(event) {
-      console.log(event);
+      var _this2 = this;
+
+      this.props.form.validateFields(function (err, values) {
+        if (!err) {
+          console.log('Received values of form: ', values);
+        } else {
+          setTimeout(function () {
+            _this2.setState({ loginState: false });
+          }, 800);
+        }
+      });
+      event.preventDefault();
     }
   }, {
     key: 'render',
     value: function render() {
       var _React$createElement;
 
-      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_LoginForm__["a" /* default */], (_React$createElement = { form: this.props.form, onSubmit: this.handleSubmit, responseGoogle: this.responseGoogle }, _defineProperty(_React$createElement, 'responseGoogle', this.responseFacebook), _defineProperty(_React$createElement, '__source', {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_LoginForm__["a" /* default */], (_React$createElement = {
+        form: this.props.form,
+        onSubmit: this.handleSubmit,
+        onClick: this.handleOnClick,
+        loginState: this.state.loginState,
+        responseGoogle: this.responseGoogle
+      }, _defineProperty(_React$createElement, 'responseGoogle', this.responseFacebook), _defineProperty(_React$createElement, '__source', {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 37
       }), _React$createElement));
     }
   }]);
@@ -169,8 +198,8 @@ var googleButtonStyle = {
   height: 'auto',
   padding: '10px 0px',
   marginBottom: '25px',
-  color: '#444444',
-  border: 'thin solid #888888'
+  color: '#757575',
+  border: '1px solid #cccccc'
 };
 var facebookButtonStyle = {
   width: '100%',
@@ -180,31 +209,41 @@ var facebookButtonStyle = {
   color: '#ffffff',
   backgroundColor: '#3b5998'
 };
+var GoogleLogo = {
+  width: '15px',
+  marginBottom: '3px'
+};
 
 /* harmony default export */ __webpack_exports__["a"] = (function (_ref) {
   var form = _ref.form,
       onSubmit = _ref.onSubmit,
+      onClick = _ref.onClick,
+      loginState = _ref.loginState,
       responseGoogle = _ref.responseGoogle,
       responseFacebook = _ref.responseFacebook;
+  var isFieldTouched = form.isFieldTouched,
+      getFieldError = form.getFieldError,
+      getFieldDecorator = form.getFieldDecorator;
+
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'div',
     { className: __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default.a.container, __source: {
         fileName: _jsxFileName,
-        lineNumber: 27
+        lineNumber: 33
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
       { type: 'flex', justify: 'center', gutter: 20, style: { margin: 0 }, __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 34
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
         { xs: 24, sm: 24, md: 12, lg: 7, __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 35
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -212,14 +251,14 @@ var facebookButtonStyle = {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 30
+              lineNumber: 36
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
             { className: __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default.a.title, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 31
+                lineNumber: 37
               }
             },
             'Start emmediately using your social account'
@@ -229,12 +268,12 @@ var facebookButtonStyle = {
             {
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 32
+                lineNumber: 38
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'rocket', __source: {
                 fileName: _jsxFileName,
-                lineNumber: 32
+                lineNumber: 38
               }
             }),
             ' No more email validation.'
@@ -242,7 +281,7 @@ var facebookButtonStyle = {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 32
+              lineNumber: 38
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -250,37 +289,37 @@ var facebookButtonStyle = {
             {
               style: googleButtonStyle,
               className: 'ant-btn',
-              clientId: '260337772129-ff01h5ua9ob0fvf5vik7c0und2279776.apps.googleusercontent.com',
+              clientId: process && process.env && process.env.GOOGLE_CLIENT_ID || '260337772129-ff01h5ua9ob0fvf5vik7c0und2279776.apps.googleusercontent.com',
               onSuccess: responseGoogle,
               onFailure: responseGoogle,
               __source: {
                 fileName: _jsxFileName,
-                lineNumber: 33
+                lineNumber: 39
               }
             },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'google', __source: {
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/static/images/google-1015752_960_720.png', style: GoogleLogo, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 39
+                lineNumber: 45
               }
             }),
             ' Login with Google'
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_react_facebook_login_dist_facebook_login_render_props___default.a, {
-            appId: '199102420673819',
+            appId: process && process.env && process.env.FACEBOOK_APP_ID || '199102420673819',
             autoLoad: false,
             callback: responseFacebook,
             id: 'facebook-button',
             render: function render(renderProps) {
               return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'button',
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
                 { onClick: renderProps.onClick, className: 'ant-btn', style: facebookButtonStyle, __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 47
+                    lineNumber: 53
                   }
                 },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'facebook', __source: {
                     fileName: _jsxFileName,
-                    lineNumber: 47
+                    lineNumber: 53
                   }
                 }),
                 ' Login with Facebook'
@@ -288,7 +327,7 @@ var facebookButtonStyle = {
             },
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 41
+              lineNumber: 47
             }
           })
         )
@@ -297,7 +336,7 @@ var facebookButtonStyle = {
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
         { xs: 24, sm: 24, md: 12, lg: 7, __source: {
             fileName: _jsxFileName,
-            lineNumber: 52
+            lineNumber: 58
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -305,14 +344,14 @@ var facebookButtonStyle = {
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 53
+              lineNumber: 59
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'p',
             { className: __WEBPACK_IMPORTED_MODULE_4__static_css_login_form_css___default.a.title, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 54
+                lineNumber: 60
               }
             },
             'Login using your email'
@@ -320,37 +359,87 @@ var facebookButtonStyle = {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 54
+              lineNumber: 60
             }
           }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Form"],
             { onSubmit: onSubmit, __source: {
                 fileName: _jsxFileName,
-                lineNumber: 55
+                lineNumber: 61
               }
             },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               FormItem,
               {
-                hasFeedback: form.isFieldTouched('Email'),
-                validateStatus: form.getFieldError('Email') ? 'error' : 'success',
-                help: form.getFieldError('Email') || '', __source: {
+                hasFeedback: isFieldTouched('Email'),
+                validateStatus: getFieldError('Email') ? 'error' : 'success',
+                help: getFieldError('Email') || '', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 56
+                  lineNumber: 62
                 }
               },
-              form.getFieldDecorator('Email', {
+              getFieldDecorator('Email', {
                 rules: [{ required: true }, { type: 'email' }]
-              })(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { placeholder: 'Email', size: 'large', prefix: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'mail', style: { color: 'rgba(0,0,0,.25)' }, __source: {
-                    fileName: _jsxFileName,
-                    lineNumber: 66
-                  }
-                }), __source: {
+              })(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { placeholder: 'Email', size: 'large', __source: {
                   fileName: _jsxFileName,
-                  lineNumber: 66
+                  lineNumber: 72
                 }
               }))
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              FormItem,
+              {
+                hasFeedback: isFieldTouched('Password'),
+                validateStatus: getFieldError('Password') ? 'error' : 'success',
+                help: getFieldError('Password') || '', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 75
+                }
+              },
+              getFieldDecorator('Password', {
+                rules: [{ required: true }, { min: 6 }]
+              })(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], { placeholder: 'Password', type: 'password', size: 'large', __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 85
+                }
+              }))
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              FormItem,
+              {
+                __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 88
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                __WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+                { type: 'primary', size: 'large', htmlType: 'submit', loading: loginState, onClick: onClick, style: { marginRight: '8px' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 89
+                  }
+                },
+                'Log in'
+              ),
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                'p',
+                { style: { display: 'inline-block' }, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 90
+                  }
+                },
+                'No account yet? ',
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                  'a',
+                  { href: '/register', __source: {
+                      fileName: _jsxFileName,
+                      lineNumber: 90
+                    }
+                  },
+                  ' Register'
+                )
+              )
             )
           )
         )
@@ -525,10 +614,10 @@ var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layou
   return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
     {
-      className: 'jsx-2120913412',
+      className: 'jsx-1033573864',
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
+        lineNumber: 8
       }
     },
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
@@ -536,35 +625,35 @@ var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layou
       {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
-        }
-      },
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'http://cdn.bootcss.com/antd/3.3.0/antd.min.css', className: 'jsx-2120913412',
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 9
         }
-      }),
-      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i', className: 'jsx-2120913412',
+      },
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'http://cdn.bootcss.com/antd/3.3.0/antd.min.css', className: 'jsx-1033573864',
         __source: {
           fileName: _jsxFileName,
           lineNumber: 10
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i', className: 'jsx-1033573864',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
         }
       })
     ),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__TopNavigation__["a" /* default */], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       }
     }),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
       'div',
       {
-        className: 'jsx-2120913412' + ' ' + (__WEBPACK_IMPORTED_MODULE_5__static_css_layout_css___default.a.layout || ''),
+        className: 'jsx-1033573864' + ' ' + (__WEBPACK_IMPORTED_MODULE_5__static_css_layout_css___default.a.layout || ''),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 14
         }
       },
       props.children
@@ -572,12 +661,12 @@ var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\components\\layout\\Layou
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__BottomNavigation__["a" /* default */], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       }
     }),
     __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
-      styleId: '2120913412',
-      css: 'html,body{font-family:\'Roboto\',sans-serif;}.border{border:1px solid #000000;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGxheW91dFxcTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWdCdUIsQUFHMEMsQUFJcEMseUJBQUMsT0FIQSIsImZpbGUiOiJjb21wb25lbnRzXFxsYXlvdXRcXExheW91dC5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy91aS9EZXNrdG9wL2dwdHQtbmV4dCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcclxuaW1wb3J0IFRvcE5hdmlnYXRpb24gZnJvbSAnLi9Ub3BOYXZpZ2F0aW9uJ1xyXG5pbXBvcnQgQm90dG9tTmF2aWdhdGlvbiBmcm9tICcuL0JvdHRvbU5hdmlnYXRpb24nXHJcbmltcG9ydCBjc3MgZnJvbSAnLi4vLi4vc3RhdGljL2Nzcy9sYXlvdXQuY3NzJ1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgKHByb3BzKSA9PiAoXHJcbiAgPGRpdj5cclxuICAgIDxIZWFkPlxyXG4gICAgICA8bGluayByZWw9XCJzdHlsZXNoZWV0XCIgaHJlZj1cImh0dHA6Ly9jZG4uYm9vdGNzcy5jb20vYW50ZC8zLjMuMC9hbnRkLm1pbi5jc3NcIi8+XHJcbiAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzoxMDAsMTAwaSwzMDAsMzAwaSw0MDAsNDAwaSw1MDAsNTAwaSw3MDAsNzAwaSw5MDAsOTAwaVwiLz5cclxuICAgIDwvSGVhZD5cclxuICAgIDxUb3BOYXZpZ2F0aW9uLz5cclxuICAgIDxkaXYgY2xhc3NOYW1lPXtjc3MubGF5b3V0fT5cclxuICAgICAge3Byb3BzLmNoaWxkcmVufVxyXG4gICAgPC9kaXY+XHJcbiAgICA8Qm90dG9tTmF2aWdhdGlvbiAvPlxyXG4gICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcclxuICAgICAgaHRtbCwgYm9keXtcclxuICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbiAgICAgIH1cclxuICAgICAgLmJvcmRlcntcclxuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMDAwMDAwXHJcbiAgICAgIH1cclxuICAgIGB9XHJcbiAgICA8L3N0eWxlPlxyXG4gIDwvZGl2PlxyXG4pXHJcbiJdfQ== */\n/*@ sourceURL=components\\layout\\Layout.js */'
+      styleId: '1033573864',
+      css: 'html,body{font-family:\'Roboto\',sans-serif;}.border{border:1px solid #000000;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXGxheW91dFxcTGF5b3V0LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWlCeUIsQUFHNEMsQUFJcEMseUJBQUMsT0FIQSIsImZpbGUiOiJjb21wb25lbnRzXFxsYXlvdXRcXExheW91dC5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy91aS9EZXNrdG9wL2dwdHQtbmV4dCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcclxuaW1wb3J0IFRvcE5hdmlnYXRpb24gZnJvbSAnLi9Ub3BOYXZpZ2F0aW9uJ1xyXG5pbXBvcnQgQm90dG9tTmF2aWdhdGlvbiBmcm9tICcuL0JvdHRvbU5hdmlnYXRpb24nXHJcbmltcG9ydCBjc3MgZnJvbSAnLi4vLi4vc3RhdGljL2Nzcy9sYXlvdXQuY3NzJ1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgKHByb3BzKSA9PiB7XHJcbiAgcmV0dXJuKFxyXG4gICAgPGRpdj5cclxuICAgICAgPEhlYWQ+XHJcbiAgICAgICAgPGxpbmsgcmVsPVwic3R5bGVzaGVldFwiIGhyZWY9XCJodHRwOi8vY2RuLmJvb3Rjc3MuY29tL2FudGQvMy4zLjAvYW50ZC5taW4uY3NzXCIvPlxyXG4gICAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzoxMDAsMTAwaSwzMDAsMzAwaSw0MDAsNDAwaSw1MDAsNTAwaSw3MDAsNzAwaSw5MDAsOTAwaVwiLz5cclxuICAgICAgPC9IZWFkPlxyXG4gICAgICA8VG9wTmF2aWdhdGlvbi8+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPXtjc3MubGF5b3V0fT5cclxuICAgICAgICB7cHJvcHMuY2hpbGRyZW59XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgICA8Qm90dG9tTmF2aWdhdGlvbiAvPlxyXG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgIGh0bWwsIGJvZHl7XHJcbiAgICAgICAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIC5ib3JkZXJ7XHJcbiAgICAgICAgICBib3JkZXI6IDFweCBzb2xpZCAjMDAwMDAwXHJcbiAgICAgICAgfVxyXG4gICAgICBgfVxyXG4gICAgICA8L3N0eWxlPlxyXG4gICAgPC9kaXY+XHJcbiAgKVxyXG59XHJcbiJdfQ== */\n/*@ sourceURL=components\\layout\\Layout.js */'
     })
   );
 });
@@ -919,7 +1008,7 @@ var Content = function Content() {
               lineNumber: 9
             }
           },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'globalpinoytravel-White', src: '../../../static/images/globalpinoytravel-White.png', style: { width: "100%", maxWidth: "200px" }, __source: {
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'global pinoy travel logo', src: '../../../static/images/globalpinoytravel-White.png', style: { width: "100%", maxWidth: "200px" }, __source: {
               fileName: _jsxFileName,
               lineNumber: 9
             }
@@ -1530,26 +1619,51 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_auth_container_LoginContainer__ = __webpack_require__("./components/auth/container/LoginContainer.js");
 var _jsxFileName = 'C:\\Users\\ui\\Desktop\\gptt-next\\pages\\login.js';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-    __WEBPACK_IMPORTED_MODULE_1__components_layout_Layout__["a" /* default */],
-    {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 5
-      }
-    },
-    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_auth_container_LoginContainer__["a" /* default */], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 6
-      }
-    })
-  );
-});
+
+
+var LoginPage = function (_React$Component) {
+  _inherits(LoginPage, _React$Component);
+
+  function LoginPage() {
+    _classCallCheck(this, LoginPage);
+
+    return _possibleConstructorReturn(this, (LoginPage.__proto__ || Object.getPrototypeOf(LoginPage)).apply(this, arguments));
+  }
+
+  _createClass(LoginPage, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1__components_layout_Layout__["a" /* default */],
+        { path: this.props.url.pathname, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_auth_container_LoginContainer__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9
+          }
+        })
+      );
+    }
+  }]);
+
+  return LoginPage;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (LoginPage);
 
 /***/ }),
 
@@ -1586,7 +1700,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/login.js");

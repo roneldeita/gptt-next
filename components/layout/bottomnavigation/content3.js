@@ -7,7 +7,7 @@ export default () => {
         <Row>
           <h2 style={txtwhite}>Gallery</h2>
         </Row>
-         
+
       </Row>
         <Row gutter={12} style={{marginTop:'16px'}}>
             <Col span={12}><img alt="Image1" src={'http://via.placeholder.com/140x100'} style={{width:"100%"}}  /></Col>
@@ -21,7 +21,7 @@ export default () => {
             <Col span={12}><img alt="Image5" src={'http://via.placeholder.com/140x100'} style={{width:"100%"}}  /></Col>
             <Col span={12}><img alt="Image6" src={'http://via.placeholder.com/140x100'} style={{width:"100%"}}  /></Col>
        </Row>
-     
+
     </div>
   )
 }
