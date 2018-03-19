@@ -3,12 +3,14 @@ import Store from '../store'
 import withRedux from 'next-redux-wrapper'
 import Layout from '../components/layout/Layout'
 import Carousel from '../components/home/container/CarouselContainer'
+import Cities from '../components/home/container/CitiesContainer'
 
 class Index extends React.Component{
   render(){
     return(
       <Layout path={this.props.url.pathname}>
         <Carousel/>
+        <Cities/>
       </Layout>
     )
   }

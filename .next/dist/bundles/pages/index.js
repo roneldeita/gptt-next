@@ -146,6 +146,59 @@ var CarouselContainer = function (_React$Component) {
 
 /***/ }),
 
+/***/ "./components/home/container/CitiesContainer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__presentation_Cities__ = __webpack_require__("./components/home/presentation/Cities.js");
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/container/CitiesContainer.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+var CitiesContainer = function (_React$Component) {
+  _inherits(CitiesContainer, _React$Component);
+
+  function CitiesContainer(props) {
+    _classCallCheck(this, CitiesContainer);
+
+    var _this = _possibleConstructorReturn(this, (CitiesContainer.__proto__ || Object.getPrototypeOf(CitiesContainer)).call(this, props));
+
+    _this.state = {
+      images: [{ img: '../static/images/banner/el-nido.jpg', slogan: 'Cebu' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Bohol' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Alabang' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Makati' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Quezon' }, { img: '../static/images/banner/Asia-Travel-Group.jpg', slogan: 'Ayala' }, { img: '../static/images/banner/el-nido.jpg', slogan: 'Makati' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Baguio' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Iloilo' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Bacolod' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Davao' }, { img: '../static/images/banner/Asia-Travel-Group.jpg', slogan: 'Ilocos' }, { img: '../static/images/banner/el-nido.jpg', slogan: 'Manila' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Tarlac' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Clark' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Paranaque' }, { img: '../static/images/banner/coastal.jpg', slogan: 'Manila' }, { img: '../static/images/banner/Asia-Travel-Group.jpg', slogan: 'Cebu' }]
+    };
+    return _this;
+  }
+
+  _createClass(CitiesContainer, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_Cities__["a" /* default */], { images: this.state.images, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        }
+      });
+    }
+  }]);
+
+  return CitiesContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (CitiesContainer);
+
+/***/ }),
+
 /***/ "./components/home/presentation/Carousel.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -257,6 +310,165 @@ var renderCarouselItem = function renderCarouselItem(item, index) {
       })
     )
   );
+});
+
+/***/ }),
+
+/***/ "./components/home/presentation/Cities.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/presentation/Cities.js';
+
+
+
+var tempImage = 'http://via.placeholder.com/140x100';
+var cityCard = function cityCard(data) {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		'div',
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 5
+			}
+		},
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+			__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+			{ gutter: 20, type: 'flex', justify: 'center', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 6
+				}
+			},
+			data.images.map(function (item, index) {
+				return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+					{ xs: 16, sm: 12, md: 8, lg: 6, xl: 4, key: index, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 8
+						}
+					},
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_1_antd__["Card"],
+						{
+							bodyStyle: { height: "220px", backgroundImage: 'url(' + item.img + ')' },
+							bordered: true, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 9
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							'p',
+							{ style: { paddingTop: "150px", fontWeight: "bold", fontSize: "20px", color: "#ffffff" }, __source: {
+									fileName: _jsxFileName,
+									lineNumber: 12
+								}
+							},
+							item.slogan
+						)
+					),
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], { style: { padding: "10px" }, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 14
+						}
+					})
+				);
+			})
+		)
+	);
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (function (images) {
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		'div',
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 23
+			}
+		},
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["BackTop"], {
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 24
+			}
+		}),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+			__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+			{
+				__source: {
+					fileName: _jsxFileName,
+					lineNumber: 25
+				}
+			},
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 26
+				}
+			}),
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+				{ xs: 22, sm: 20, md: 18, lg: 18, xl: 18, __source: {
+						fileName: _jsxFileName,
+						lineNumber: 27
+					}
+				},
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+					{
+						__source: {
+							fileName: _jsxFileName,
+							lineNumber: 28
+						}
+					},
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+						{ span: 12, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 29
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							'h1',
+							{
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 29
+								}
+							},
+							'Find homes locally'
+						)
+					),
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+						{ span: 12, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 30
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							'p',
+							{ style: { textAlign: "right", paddingTop: "20px" }, __source: {
+									fileName: _jsxFileName,
+									lineNumber: 30
+								}
+							},
+							'View All >'
+						)
+					)
+				),
+				cityCard(images)
+			),
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 34
+				}
+			})
+		)
+	);
 });
 
 /***/ }),
@@ -1434,6 +1646,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_redux_wrapper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_redux_wrapper__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_layout_Layout__ = __webpack_require__("./components/layout/Layout.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_home_container_CarouselContainer__ = __webpack_require__("./components/home/container/CarouselContainer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_home_container_CitiesContainer__ = __webpack_require__("./components/home/container/CitiesContainer.js");
 var _jsxFileName = '/Users/gprs/Documents/gptt-next/pages/index.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1443,6 +1656,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -1466,13 +1680,19 @@ var Index = function (_React$Component) {
         __WEBPACK_IMPORTED_MODULE_3__components_layout_Layout__["a" /* default */],
         { path: this.props.url.pathname, __source: {
             fileName: _jsxFileName,
-            lineNumber: 10
+            lineNumber: 11
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_home_container_CarouselContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 11
+            lineNumber: 12
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_home_container_CitiesContainer__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13
           }
         })
       );
