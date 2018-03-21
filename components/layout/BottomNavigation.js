@@ -1,4 +1,4 @@
-import { Row, Col  } from 'antd'
+import { Row, Col,Divider  } from 'antd'
 import css from '../../static/css/bottom-navigation.css'
 import Content1 from './presentation/bottomcontents/Content1'
 import Content2 from './presentation/bottomcontents/Content2'
@@ -11,16 +11,16 @@ export default () =>
       <Row type="flex" justify="center" >
         <Col className="" xs={20} md={16}>
           <Row gutter={80} className={css.padding} type="flex" justify="center">
-            <Col sm={24} md={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
             	<Content1/>
             </Col>
-            <Col sm={24} md={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
 				      <Content2/>
             </Col>
-            <Col sm={24} md={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
 				      <Content3/>
             </Col>
-            <Col sm={24} md={6}>
+            <Col xs={24} sm={12} md={12} lg={6} xl={6}>
 				      <Content4/>
             </Col>
           </Row>

@@ -1,3 +1,4 @@
+import React from 'react'
 import Cities from '../presentation/Cities'
 
 class CitiesContainer extends React.Component {

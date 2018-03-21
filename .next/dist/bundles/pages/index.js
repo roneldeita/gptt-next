@@ -84,6 +84,54 @@ var CHANGE_LOCALE_SUCCESS = 'CHANGE_LOCALE_SUCCESS';
 
 /***/ }),
 
+/***/ "./components/home/container/BottomBarContainer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__presentation_BottomBar__ = __webpack_require__("./components/home/presentation/BottomBar.js");
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/container/BottomBarContainer.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var BottomBarContainer = function (_React$Component) {
+  _inherits(BottomBarContainer, _React$Component);
+
+  function BottomBarContainer(props) {
+    _classCallCheck(this, BottomBarContainer);
+
+    return _possibleConstructorReturn(this, (BottomBarContainer.__proto__ || Object.getPrototypeOf(BottomBarContainer)).call(this, props));
+  }
+
+  _createClass(BottomBarContainer, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_BottomBar__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        }
+      });
+    }
+  }]);
+
+  return BottomBarContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (BottomBarContainer);
+
+/***/ }),
+
 /***/ "./components/home/container/CarouselContainer.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -157,13 +205,12 @@ var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/container/Ci
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -186,7 +233,7 @@ var CitiesContainer = function (_React$Component) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_Cities__["a" /* default */], { images: this.state.images, __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 32
         }
       });
     }
@@ -196,6 +243,162 @@ var CitiesContainer = function (_React$Component) {
 }(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["a"] = (CitiesContainer);
+
+/***/ }),
+
+/***/ "./components/home/container/GuideContainer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__presentation_Guide__ = __webpack_require__("./components/home/presentation/Guide.js");
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/container/GuideContainer.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var GuideContainer = function (_React$Component) {
+  _inherits(GuideContainer, _React$Component);
+
+  function GuideContainer(props) {
+    _classCallCheck(this, GuideContainer);
+
+    return _possibleConstructorReturn(this, (GuideContainer.__proto__ || Object.getPrototypeOf(GuideContainer)).call(this, props));
+  }
+
+  _createClass(GuideContainer, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_Guide__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        }
+      });
+    }
+  }]);
+
+  return GuideContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (GuideContainer);
+
+/***/ }),
+
+/***/ "./components/home/presentation/BottomBar.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
+var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/home/presentation/BottomBar.js";
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+	var label = "It's Time For a New Adventure!Dont Wait Any Longer.Contact us!";
+	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+		"div",
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 6
+			}
+		},
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+			__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+			{ style: { backgroundColor: "#323232" }, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 7
+				}
+			},
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 0, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 8
+				}
+			}),
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+				__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+				{ xs: 24, sm: 20, md: 18, lg: 18, xl: 18, __source: {
+						fileName: _jsxFileName,
+						lineNumber: 9
+					}
+				},
+				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+					__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+					{ style: { height: "200px" }, type: "flex", justify: "center", align: "middle", __source: {
+							fileName: _jsxFileName,
+							lineNumber: 10
+						}
+					},
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+						{ xs: { span: 18, order: 1 }, sm: 18, md: 18, lg: 18, xl: 16, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 11
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							"p",
+							{ style: { fontSize: "30px", color: "#ffffff" }, __source: {
+									fileName: _jsxFileName,
+									lineNumber: 11
+								}
+							},
+							label
+						)
+					),
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+						{ xs: { span: 6, order: 1 }, sm: 6, md: 6, lg: 6, xl: 8, __source: {
+								fileName: _jsxFileName,
+								lineNumber: 12
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+							__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+							{ type: "flex", justify: "end", align: "top", __source: {
+									fileName: _jsxFileName,
+									lineNumber: 13
+								}
+							},
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+								__WEBPACK_IMPORTED_MODULE_1_antd__["Button"],
+								{ style: { width: "360px", height: "60px" }, type: "primary", __source: {
+										fileName: _jsxFileName,
+										lineNumber: 14
+									}
+								},
+								"BOOK NOW!"
+							)
+						)
+					)
+				)
+			),
+			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 0, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 19
+				}
+			})
+		),
+		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], { style: { borderBottom: "1px solid grey" }, __source: {
+				fileName: _jsxFileName,
+				lineNumber: 21
+			}
+		})
+	);
+});
 
 /***/ }),
 
@@ -327,20 +530,35 @@ var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/presentation
 
 
 var tempImage = 'http://via.placeholder.com/140x100';
+
+var cityCardStyle = {
+	addingTop: "150px",
+	fontWeight: "bold",
+	fontSize: "20px",
+	color: "#ffffff"
+};
+var padds = {
+	padding: "10px"
+};
+var containerCardStyle = {
+	textAlign: "right",
+	paddingTop: "20px"
+};
+
 var cityCard = function cityCard(data) {
 	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 		'div',
 		{
 			__source: {
 				fileName: _jsxFileName,
-				lineNumber: 5
+				lineNumber: 20
 			}
 		},
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 			__WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
 			{ gutter: 20, type: 'flex', justify: 'center', __source: {
 					fileName: _jsxFileName,
-					lineNumber: 6
+					lineNumber: 21
 				}
 			},
 			data.images.map(function (item, index) {
@@ -348,7 +566,7 @@ var cityCard = function cityCard(data) {
 					__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
 					{ xs: 16, sm: 12, md: 8, lg: 6, xl: 4, key: index, __source: {
 							fileName: _jsxFileName,
-							lineNumber: 8
+							lineNumber: 23
 						}
 					},
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -357,22 +575,22 @@ var cityCard = function cityCard(data) {
 							bodyStyle: { height: "220px", backgroundImage: 'url(' + item.img + ')' },
 							bordered: true, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 9
+								lineNumber: 24
 							}
 						},
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							'p',
-							{ style: { paddingTop: "150px", fontWeight: "bold", fontSize: "20px", color: "#ffffff" }, __source: {
+							{ style: cityCardStyle, __source: {
 									fileName: _jsxFileName,
-									lineNumber: 12
+									lineNumber: 27
 								}
 							},
 							item.slogan
 						)
 					),
-					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], { style: { padding: "10px" }, __source: {
+					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], { style: padds, __source: {
 							fileName: _jsxFileName,
-							lineNumber: 14
+							lineNumber: 29
 						}
 					})
 				);
@@ -382,18 +600,19 @@ var cityCard = function cityCard(data) {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (function (images) {
+	var CityCards = cityCard(images);
 	return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 		'div',
 		{
 			__source: {
 				fileName: _jsxFileName,
-				lineNumber: 23
+				lineNumber: 39
 			}
 		},
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["BackTop"], {
 			__source: {
 				fileName: _jsxFileName,
-				lineNumber: 24
+				lineNumber: 40
 			}
 		}),
 		__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -401,19 +620,19 @@ var cityCard = function cityCard(data) {
 			{
 				__source: {
 					fileName: _jsxFileName,
-					lineNumber: 25
+					lineNumber: 41
 				}
 			},
 			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
 					fileName: _jsxFileName,
-					lineNumber: 26
+					lineNumber: 42
 				}
 			}),
 			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 				__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
 				{ xs: 22, sm: 20, md: 18, lg: 18, xl: 18, __source: {
 						fileName: _jsxFileName,
-						lineNumber: 27
+						lineNumber: 43
 					}
 				},
 				__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -421,14 +640,14 @@ var cityCard = function cityCard(data) {
 					{
 						__source: {
 							fileName: _jsxFileName,
-							lineNumber: 28
+							lineNumber: 44
 						}
 					},
 					__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 						__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
 						{ span: 12, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 29
+								lineNumber: 45
 							}
 						},
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -436,7 +655,7 @@ var cityCard = function cityCard(data) {
 							{
 								__source: {
 									fileName: _jsxFileName,
-									lineNumber: 29
+									lineNumber: 45
 								}
 							},
 							'Find homes locally'
@@ -446,28 +665,321 @@ var cityCard = function cityCard(data) {
 						__WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
 						{ span: 12, __source: {
 								fileName: _jsxFileName,
-								lineNumber: 30
+								lineNumber: 46
 							}
 						},
 						__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
 							'p',
-							{ style: { textAlign: "right", paddingTop: "20px" }, __source: {
+							{ style: containerCardStyle, __source: {
 									fileName: _jsxFileName,
-									lineNumber: 30
+									lineNumber: 46
 								}
 							},
-							'View All >'
+							'View All  ',
+							__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: 'right', __source: {
+									fileName: _jsxFileName,
+									lineNumber: 46
+								}
+							})
 						)
 					)
 				),
-				cityCard(images)
+				CityCards
 			),
 			__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
 					fileName: _jsxFileName,
-					lineNumber: 34
+					lineNumber: 51
 				}
 			})
 		)
+	);
+});
+
+/***/ }),
+
+/***/ "./components/home/presentation/Guide.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd__ = __webpack_require__("antd");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_antd__);
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/presentation/Guide.js';
+
+
+
+var tempImage = 'http://via.placeholder.com/140x100';
+
+var Meta = __WEBPACK_IMPORTED_MODULE_2_antd__["Card"].Meta;
+
+var Panel = __WEBPACK_IMPORTED_MODULE_2_antd__["Collapse"].Panel;
+
+var text = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+	'p',
+	{
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 8
+		}
+	},
+	'A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.'
+);
+
+var guideTitle = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+	'div',
+	{
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 16
+		}
+	},
+	__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+		'h1',
+		{ align: 'middle', __source: {
+				fileName: _jsxFileName,
+				lineNumber: 17
+			}
+		},
+		'Other Useful Information'
+	)
+);
+var guideMessage = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+	'div',
+	{
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 21
+		}
+	},
+	__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+		'p',
+		{ align: 'middle', __source: {
+				fileName: _jsxFileName,
+				lineNumber: 22
+			}
+		},
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua'
+	),
+	__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+		'p',
+		{ align: 'middle', __source: {
+				fileName: _jsxFileName,
+				lineNumber: 23
+			}
+		},
+		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore'
+	)
+);
+var header = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+	'div',
+	{
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 27
+		}
+	},
+	__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+		__WEBPACK_IMPORTED_MODULE_2_antd__["Row"],
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 28
+			}
+		},
+		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+			__WEBPACK_IMPORTED_MODULE_2_antd__["Col"],
+			{ span: 12, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 29
+				}
+			},
+			'Lorem Ipsum'
+		),
+		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+			__WEBPACK_IMPORTED_MODULE_2_antd__["Col"],
+			{ span: 12, align: 'end', style: { paddingRight: "10px" }, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 30
+				}
+			},
+			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_antd__["Icon"], { type: 'down', __source: {
+					fileName: _jsxFileName,
+					lineNumber: 30
+				}
+			})
+		)
+	)
+);
+var guideTabs = __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+	'div',
+	{
+		className: 'jsx-2898281135',
+		__source: {
+			fileName: _jsxFileName,
+			lineNumber: 36
+		}
+	},
+	__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+		__WEBPACK_IMPORTED_MODULE_2_antd__["Row"],
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 37
+			}
+		},
+		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+				fileName: _jsxFileName,
+				lineNumber: 38
+			}
+		}),
+		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+			__WEBPACK_IMPORTED_MODULE_2_antd__["Col"],
+			{ xs: 22, sm: 20, md: 18, lg: 18, xl: 18, __source: {
+					fileName: _jsxFileName,
+					lineNumber: 39
+				}
+			},
+			__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+				__WEBPACK_IMPORTED_MODULE_2_antd__["Row"],
+				{ gutter: 16, __source: {
+						fileName: _jsxFileName,
+						lineNumber: 41
+					}
+				},
+				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+					__WEBPACK_IMPORTED_MODULE_2_antd__["Col"],
+					{ xs: 24, sm: 24, md: 8, lg: 8, xl: 8, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 42
+						}
+					},
+					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_2_antd__["Card"],
+						{
+							bordered: false,
+							cover: __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', { alt: 'example', src: tempImage, className: 'jsx-2898281135',
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 45
+								}
+							}), __source: {
+								fileName: _jsxFileName,
+								lineNumber: 43
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Meta, {
+							title: 'Private Guide Tour',
+							description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 46
+							}
+						})
+					)
+				),
+				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+					__WEBPACK_IMPORTED_MODULE_2_antd__["Col"],
+					{ xs: 24, sm: 24, md: 8, lg: 8, xl: 8, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 52
+						}
+					},
+					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_2_antd__["Card"],
+						{
+							bordered: false,
+							cover: __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement('img', { alt: 'example', src: tempImage, className: 'jsx-2898281135',
+								__source: {
+									fileName: _jsxFileName,
+									lineNumber: 55
+								}
+							}), __source: {
+								fileName: _jsxFileName,
+								lineNumber: 53
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(Meta, {
+							title: 'Special Tour Activities',
+							description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam',
+							__source: {
+								fileName: _jsxFileName,
+								lineNumber: 56
+							}
+						})
+					)
+				),
+				__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+					__WEBPACK_IMPORTED_MODULE_2_antd__["Col"],
+					{ xs: 24, sm: 24, md: 8, lg: 8, xl: 8, __source: {
+							fileName: _jsxFileName,
+							lineNumber: 64
+						}
+					},
+					__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+						__WEBPACK_IMPORTED_MODULE_2_antd__["Collapse"],
+						{ bordered: false, defaultActiveKey: ['0'], __source: {
+								fileName: _jsxFileName,
+								lineNumber: 65
+							}
+						},
+						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+							Panel,
+							{ showArrow: false, header: header, key: '1', __source: {
+									fileName: _jsxFileName,
+									lineNumber: 66
+								}
+							},
+							text
+						),
+						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+							Panel,
+							{ showArrow: false, header: header, key: '2', __source: {
+									fileName: _jsxFileName,
+									lineNumber: 69
+								}
+							},
+							text
+						),
+						__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+							Panel,
+							{ showArrow: false, header: header, key: '3', __source: {
+									fileName: _jsxFileName,
+									lineNumber: 72
+								}
+							},
+							text
+						)
+					)
+				)
+			)
+		),
+		__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+				fileName: _jsxFileName,
+				lineNumber: 79
+			}
+		})
+	),
+	__WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
+		styleId: '2898281135',
+		css: '.ant-collapse-borderless .ant-collapse-item-active .ant-collapse-header{background-color:#DCDCDC;}.ant-card-body{padding:1px;padding-top:20px;padding-right:10px;padding-bottom:20px;zoom:1;}.ant-collapse>.ant-collapse-item.ant-collapse-no-arrow>.ant-collapse-header{padding-left:12px;}.ant-collapse-borderless{border-top:1px solid #D3D3D3;}.ant-collapse>.ant-collapse-item.ant-collapse-no-arrow>.ant-collapse-header p{margin-bottom:0;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvaG9tZS9wcmVzZW50YXRpb24vR3VpZGUuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBaUZ5QixBQUlRLEFBRWMsQUFPSyxBQUdVLEFBR1osWUFaQyxJQWFyQixFQU5FLE9BVkUsSUFJbUIsQUFTdkIsbUJBUndCLG9CQUNkLE9BQ04iLCJmaWxlIjoiY29tcG9uZW50cy9ob21lL3ByZXNlbnRhdGlvbi9HdWlkZS5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvZ3Bycy9Eb2N1bWVudHMvZ3B0dC1uZXh0Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtSb3csIENvbCxDYXJkLENvbGxhcHNlLEljb259IGZyb20gJ2FudGQnXG5jb25zdCB0ZW1wSW1hZ2UgPSAnaHR0cDovL3ZpYS5wbGFjZWhvbGRlci5jb20vMTQweDEwMCdcblxuY29uc3QgeyBNZXRhIH0gPSBDYXJkO1xuY29uc3QgUGFuZWwgPSBDb2xsYXBzZS5QYW5lbDtcblxuY29uc3QgdGV4dCA9IChcbiAgPHA+XG4gICAgQSBkb2cgaXMgYSB0eXBlIG9mIGRvbWVzdGljYXRlZCBhbmltYWwuXG4gICAgS25vd24gZm9yIGl0cyBsb3lhbHR5IGFuZCBmYWl0aGZ1bG5lc3MsXG4gICAgaXQgY2FuIGJlIGZvdW5kIGFzIGEgd2VsY29tZSBndWVzdCBpbiBtYW55IGhvdXNlaG9sZHMgYWNyb3NzIHRoZSB3b3JsZC5cbiAgPC9wPlxuKVxuXG5jb25zdCBndWlkZVRpdGxlID0gKFxuXHRcdDxkaXY+XG5cdFx0XHQ8aDEgYWxpZ249XCJtaWRkbGVcIj5PdGhlciBVc2VmdWwgSW5mb3JtYXRpb248L2gxPlxuXHRcdDwvZGl2PlxuKVxuY29uc3QgZ3VpZGVNZXNzYWdlID0gKFxuXHRcdDxkaXY+XG5cdFx0XHQ8cCBhbGlnbj1cIm1pZGRsZVwiPkxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNjaW5nIGVsaXQsIHNlZCBkbyBlaXVzbW9kIHRlbXBvciBpbmNpZGlkdW50IHV0IGxhYm9yZSBldCBkb2xvcmUgbWFnbmEgYWxpcXVhPC9wPlxuXHRcdFx0PHAgYWxpZ249XCJtaWRkbGVcIj5Mb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LCBzZWQgZG8gZWl1c21vZCB0ZW1wb3IgaW5jaWRpZHVudCB1dCBsYWJvcmU8L3A+XG5cdFx0PC9kaXY+XG4pXG5jb25zdCBoZWFkZXIgPSAoXG5cdFx0PGRpdj5cblx0XHRcdDxSb3c+XG5cdFx0XHRcdDxDb2wgc3Bhbj17MTJ9PkxvcmVtIElwc3VtPC9Db2w+XG5cdFx0XHRcdDxDb2wgc3Bhbj17MTJ9IGFsaWduPVwiZW5kXCIgc3R5bGU9e3twYWRkaW5nUmlnaHQ6XCIxMHB4XCJ9fT48SWNvbiB0eXBlPVwiZG93blwiIC8+PC9Db2w+XG5cdFx0XHQ8L1Jvdz5cblx0XHRcdFxuXHRcdDwvZGl2PlxuKVxuY29uc3QgZ3VpZGVUYWJzID0oXG5cdFx0PGRpdj5cblx0XHRcdDxSb3c+XG5cdFx0XHRcdDxDb2wgeHM9ezF9IHNtPXsyfSBtZD17M30gbGc9ezN9IHhsPXszfT48L0NvbD5cblx0XHRcdCAgICA8Q29sIHhzPXsyMn0gc209ezIwfSBtZD17MTh9IGxnPXsxOH0geGw9ezE4fT5cblx0XHRcdCBcdCAgIFxuXHRcdFx0XHRcdDxSb3cgZ3V0dGVyPXsxNn0+XG5cdFx0XHQgXHRcdFx0PENvbCB4cz17MjR9IHNtPXsyNH0gbWQ9ezh9IGxnPXs4fSB4bD17OH0+XG5cdFx0XHQgXHRcdFx0XHQ8Q2FyZFxuXHRcdFx0XHRcdFx0XHQgICAgYm9yZGVyZWQ9e2ZhbHNlfVxuXHRcdFx0XHRcdFx0XHQgICAgY292ZXI9ezxpbWcgYWx0PVwiZXhhbXBsZVwiIHNyYz17dGVtcEltYWdlfSAvPn0+XG5cdFx0XHRcdFx0XHRcdCAgICA8TWV0YSBcblx0XHRcdFx0XHRcdFx0ICAgICAgdGl0bGU9XCJQcml2YXRlIEd1aWRlIFRvdXJcIlxuXHRcdFx0XHRcdFx0XHQgICAgICBkZXNjcmlwdGlvbj1cIkxvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNjaW5nIGVsaXQsIHNlZCBkbyBlaXVzbW9kIHRlbXBvciBpbmNpZGlkdW50IHV0IGxhYm9yZSBldCBkb2xvcmUgbWFnbmEgYWxpcXVhLiBVdCBlbmltIGFkIG1pbmltIHZlbmlhbVwiXG5cdFx0XHRcdFx0XHRcdCAgICAvPlxuXHRcdFx0XHRcdFx0XHQ8L0NhcmQ+XG5cdFx0XHQgXHRcdFx0PC9Db2w+XG5cdFx0XHQgXHRcdFx0PENvbCB4cz17MjR9IHNtPXsyNH0gbWQ9ezh9IGxnPXs4fSB4bD17OH0+XG5cdFx0XHQgXHRcdFx0XHQ8Q2FyZFxuXHRcdFx0XHRcdFx0XHQgICAgYm9yZGVyZWQ9e2ZhbHNlfVxuXHRcdFx0XHRcdFx0XHQgICAgY292ZXI9ezxpbWcgYWx0PVwiZXhhbXBsZVwiIHNyYz17dGVtcEltYWdlfSAvPn0+XG5cdFx0XHRcdFx0XHRcdCAgICA8TWV0YVxuXHRcdFx0XHRcdFx0XHQgICAgICB0aXRsZT1cIlNwZWNpYWwgVG91ciBBY3Rpdml0aWVzXCJcblx0XHRcdFx0XHRcdFx0ICAgICAgZGVzY3JpcHRpb249XCJMb3JlbSBpcHN1bSBkb2xvciBzaXQgYW1ldCwgY29uc2VjdGV0dXIgYWRpcGlzY2luZyBlbGl0LCBzZWQgZG8gZWl1c21vZCB0ZW1wb3IgaW5jaWRpZHVudCB1dCBsYWJvcmUgZXQgZG9sb3JlIG1hZ25hIGFsaXF1YS4gVXQgZW5pbSBhZCBtaW5pbSB2ZW5pYW1cIlxuXHRcdFx0XHRcdFx0XHQgICAgLz5cblx0XHRcdFx0XHRcdFx0PC9DYXJkPlxuXG5cdFx0XHQgXHRcdFx0PC9Db2w+XG5cdFx0XHQgXHRcdFx0XG5cdFx0XHQgXHRcdFx0PENvbCB4cz17MjR9IHNtPXsyNH0gbWQ9ezh9IGxnPXs4fSB4bD17OH0+XG5cdFx0XHQgXHRcdFx0IDxDb2xsYXBzZSBib3JkZXJlZD17ZmFsc2V9IGRlZmF1bHRBY3RpdmVLZXk9e1snMCddfT5cblx0XHRcdFx0XHRcdCAgICA8UGFuZWwgc2hvd0Fycm93PXtmYWxzZX0gaGVhZGVyPXtoZWFkZXJ9IGtleT1cIjFcIj5cblx0XHRcdFx0XHRcdCAgICAgIHt0ZXh0fVxuXHRcdFx0XHRcdFx0ICAgIDwvUGFuZWw+XG5cdFx0XHRcdFx0XHQgICAgPFBhbmVsIHNob3dBcnJvdz17ZmFsc2V9IGhlYWRlcj17aGVhZGVyfSBrZXk9XCIyXCI+XG5cdFx0XHRcdFx0XHQgICAgICB7dGV4dH1cblx0XHRcdFx0XHRcdCAgICA8L1BhbmVsPlxuXHRcdFx0XHRcdFx0ICAgIDxQYW5lbCBzaG93QXJyb3c9e2ZhbHNlfSBoZWFkZXI9e2hlYWRlcn1rZXk9XCIzXCI+XG5cdFx0XHRcdFx0XHQgICAgICB7dGV4dH1cblx0XHRcdFx0XHRcdCAgICA8L1BhbmVsPlxuXHRcdFx0XHRcdFx0ICA8L0NvbGxhcHNlPlxuXHRcdFx0IFx0XHRcdDwvQ29sPlxuXHRcdFx0ICAgIFx0PC9Sb3c+XG5cdFx0XHQgICAgPC9Db2w+XG5cdFx0XHQgICAgPENvbCB4cz17MX0gc209ezJ9IG1kPXszfSBsZz17M30geGw9ezN9PjwvQ29sPlxuXHRcdFx0PC9Sb3c+XG5cblx0XHQgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2Bcblx0XHQgICAgICAuYW50LWNvbGxhcHNlLWJvcmRlcmxlc3MgLmFudC1jb2xsYXBzZS1pdGVtLWFjdGl2ZSAuYW50LWNvbGxhcHNlLWhlYWRlcntcblx0XHQgICAgICBcdGJhY2tncm91bmQtY29sb3I6I0RDRENEQyBcblx0XHQgICAgICB9XG5cdFx0ICAgICAgLmFudC1jYXJkLWJvZHl7XG5cdFx0ICAgICAgXHRwYWRkaW5nOiAxcHg7XG5cdFx0ICAgICAgXHRwYWRkaW5nLXRvcDoyMHB4O1xuXHRcdCAgICAgIFx0cGFkZGluZy1yaWdodDoxMHB4O1xuXHRcdCAgICAgIFx0cGFkZGluZy1ib3R0b206MjBweDtcbiAgICBcdFx0XHR6b29tOiAxO1xuXHRcdCAgICAgIH1cblx0XHQgICAgICAuYW50LWNvbGxhcHNlPi5hbnQtY29sbGFwc2UtaXRlbS5hbnQtY29sbGFwc2Utbm8tYXJyb3c+LmFudC1jb2xsYXBzZS1oZWFkZXIge1xuXHRcdFx0XHQgICAgcGFkZGluZy1sZWZ0OiAxMnB4O1xuXHRcdFx0ICAgfVxuXHRcdFx0ICAgLmFudC1jb2xsYXBzZS1ib3JkZXJsZXNzIHtcblx0XHRcdFx0ICAgIGJvcmRlci10b3A6MXB4IHNvbGlkICNEM0QzRDM7XG5cdFx0XHRcdH1cblx0XHRcdFx0LmFudC1jb2xsYXBzZT4uYW50LWNvbGxhcHNlLWl0ZW0uYW50LWNvbGxhcHNlLW5vLWFycm93Pi5hbnQtY29sbGFwc2UtaGVhZGVyIHAge1xuICAgXHRcdFx0XHQgbWFyZ2luLWJvdHRvbTogMDtcblx0XHRcdFx0fVxuXHRcdCAgICBgfTwvc3R5bGU+XG5cdFx0PC9kaXY+XG4pXG5cdFx0ICAgICBcblxuZXhwb3J0IGRlZmF1bHQgKCkgPT4ge1xuXHRyZXR1cm4gKFxuXHRcdDxkaXY+XG5cdFx0XHR7Z3VpZGVUaXRsZX1cblx0XHRcdHtndWlkZU1lc3NhZ2V9XG5cdFx0XHR7Z3VpZGVUYWJzfVx0XHRcblx0XHQ8L2Rpdj5cblx0KVxufSJdfQ== */\n/*@ sourceURL=components/home/presentation/Guide.js */'
+	})
+);
+
+/* harmony default export */ __webpack_exports__["a"] = (function () {
+	return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
+		'div',
+		{
+			__source: {
+				fileName: _jsxFileName,
+				lineNumber: 109
+			}
+		},
+		guideTitle,
+		guideMessage,
+		guideTabs
 	);
 });
 
@@ -528,7 +1040,7 @@ var message = "Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserve
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { sm: 24, md: 6, __source: {
+            { xs: 24, sm: 12, md: 12, lg: 6, xl: 6, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 14
               }
@@ -542,7 +1054,7 @@ var message = "Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserve
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { sm: 24, md: 6, __source: {
+            { xs: 24, sm: 12, md: 12, lg: 6, xl: 6, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 17
               }
@@ -556,7 +1068,7 @@ var message = "Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserve
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { sm: 24, md: 6, __source: {
+            { xs: 24, sm: 12, md: 12, lg: 6, xl: 6, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 20
               }
@@ -570,7 +1082,7 @@ var message = "Copyright 2018 by Global Pinoy Travel & Tours. All Rights Reserve
           ),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-            { sm: 24, md: 6, __source: {
+            { xs: 24, sm: 12, md: 12, lg: 6, xl: 6, __source: {
                 fileName: _jsxFileName,
                 lineNumber: 23
               }
@@ -1013,22 +1525,23 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
       }
     },
     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-      { type: 'flex', justify: 'center', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.padding50, __source: {
+      'div',
+      { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.globalpinoylogo, __source: {
           fileName: _jsxFileName,
           lineNumber: 9
         }
       },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
-        { type: 'flex', justify: 'space-between', __source: {
+        {
+          __source: {
             fileName: _jsxFileName,
             lineNumber: 10
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
-          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.globalpinoylogo, span: 24, __source: {
+          { span: 24, __source: {
               fileName: _jsxFileName,
               lineNumber: 11
             }
@@ -1038,17 +1551,33 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
               lineNumber: 11
             }
           })
-        ),
+        )
+      )
+    ),
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+      { type: 'flex', justify: 'left', className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.padding50, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+        { gutter: 34, type: 'flex', justify: 'space-between', __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15
+          }
+        },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
           { span: 8, __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 16
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'Secure Logo', src: secureLogo, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottomlogo, __source: {
               fileName: _jsxFileName,
-              lineNumber: 12
+              lineNumber: 16
             }
           })
         ),
@@ -1056,12 +1585,12 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
           { span: 8, __source: {
               fileName: _jsxFileName,
-              lineNumber: 13
+              lineNumber: 17
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: 'IATA Logo', src: IATALogo, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottomlogo, __source: {
               fileName: _jsxFileName,
-              lineNumber: 13
+              lineNumber: 17
             }
           })
         ),
@@ -1069,12 +1598,12 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
           { span: 8, __source: {
               fileName: _jsxFileName,
-              lineNumber: 14
+              lineNumber: 18
             }
           },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { alt: '24HR Logo', src: hrsLogo, className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.bottomlogo, __source: {
               fileName: _jsxFileName,
-              lineNumber: 14
+              lineNumber: 18
             }
           })
         )
@@ -1083,7 +1612,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
         { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.padding20, span: 24, __source: {
             fileName: _jsxFileName,
-            lineNumber: 17
+            lineNumber: 21
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -1091,7 +1620,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 18
+              lineNumber: 22
             }
           },
           'Customer Service'
@@ -1101,7 +1630,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 19
+              lineNumber: 23
             }
           },
           '+63-9XX-XXX-XXXX'
@@ -1111,7 +1640,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 20
+              lineNumber: 24
             }
           },
           'Email:support@mygprs.com'
@@ -1121,7 +1650,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 21
+              lineNumber: 25
             }
           },
           'Address: Floor,St.,Barangay,Quezon City'
@@ -1131,7 +1660,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 22
+              lineNumber: 26
             }
           },
           'Metro Manila Philippines 1000'
@@ -1141,7 +1670,7 @@ var hrsLogo = '../../../../static/images/24HR-01.png';
           {
             __source: {
               fileName: _jsxFileName,
-              lineNumber: 23
+              lineNumber: 27
             }
           },
           'Offic Hours: Monday-Friday 8 30am -6 30pm'
@@ -1227,15 +1756,12 @@ var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/presentati
           },
           ' '
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h5',
-          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.line, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 12
-            }
-          },
-          ' '
-        )
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Divider"], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 12
+          }
+        })
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
@@ -1262,15 +1788,12 @@ var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/layout/presentati
           },
           '05.04.2018'
         ),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'h5',
-          { className: __WEBPACK_IMPORTED_MODULE_2__static_css_bottom_navigation_css___default.a.line, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 17
-            }
-          },
-          ' '
-        )
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Divider"], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17
+          }
+        })
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
@@ -1647,6 +2170,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_layout_Layout__ = __webpack_require__("./components/layout/Layout.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_home_container_CarouselContainer__ = __webpack_require__("./components/home/container/CarouselContainer.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_home_container_CitiesContainer__ = __webpack_require__("./components/home/container/CitiesContainer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_home_container_BottomBarContainer__ = __webpack_require__("./components/home/container/BottomBarContainer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_container_GuideContainer__ = __webpack_require__("./components/home/container/GuideContainer.js");
 var _jsxFileName = '/Users/gprs/Documents/gptt-next/pages/index.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -1656,6 +2181,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
 
 
 
@@ -1680,19 +2207,31 @@ var Index = function (_React$Component) {
         __WEBPACK_IMPORTED_MODULE_3__components_layout_Layout__["a" /* default */],
         { path: this.props.url.pathname, __source: {
             fileName: _jsxFileName,
-            lineNumber: 11
+            lineNumber: 13
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_home_container_CarouselContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 12
+            lineNumber: 14
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_home_container_CitiesContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 13
+            lineNumber: 15
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_home_container_GuideContainer__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_home_container_BottomBarContainer__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17
           }
         })
       );
@@ -1769,7 +2308,6 @@ module.exports = {
 	"globalpinoylogo": "_1cdDArN6K2c7sYA3yGOubg",
 	"padding50": "_2CgfpdcVKYd8tohoU9prI0",
 	"margintop50": "_1WD0yUGm8sGBFbW-V5vrNw",
-	"line": "_35tF26Ji_HhwhZuzEoiFua",
 	"width": "_2zJIsOEIKgExHiCZRtE9vz",
 	"margintop16": "_15COiSskFCXrcldyDiWpk5",
 	"facebook": "_13R7jKIPe78an0A9vAIpXZ",
@@ -1777,7 +2315,8 @@ module.exports = {
 	"linkedin": "_2kErrHLpteByid_SGW4KEy",
 	"googleplus": "_3bxc2YziUNgxBK_TzNOLIF",
 	"size100": "_1Rn1qsO9e0qK7kKzANMU3",
-	"downloadlabel": "_1ofOfQ-j0Ut-srtUmYDIUo"
+	"downloadlabel": "_1ofOfQ-j0Ut-srtUmYDIUo",
+	"logos": "_1J-iRpvMJqRRUKwiK3n8dD"
 };
 
 /***/ }),

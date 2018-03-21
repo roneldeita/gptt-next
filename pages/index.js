@@ -4,6 +4,8 @@ import withRedux from 'next-redux-wrapper'
 import Layout from '../components/layout/Layout'
 import Carousel from '../components/home/container/CarouselContainer'
 import Cities from '../components/home/container/CitiesContainer'
+import BottomBar from '../components/home/container/BottomBarContainer'
+import Guide from '../components/home/container/GuideContainer'
 
 class Index extends React.Component{
   render(){
@@ -11,6 +13,8 @@ class Index extends React.Component{
       <Layout path={this.props.url.pathname}>
         <Carousel/>
         <Cities/>
+        <Guide/>
+        <BottomBar/>
       </Layout>
     )
   }

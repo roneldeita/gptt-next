@@ -45,7 +45,7 @@
 	padding-top:20px;
 }
 .globalpinoylogo {
-	padding-bottom:30px;
+	padding-top:50px;
 	width:100%;
 	max-width:200px; 
 }
@@ -55,11 +55,6 @@
 
 .margintop50 {
 	margin-top:50px;
-}
-.line {
-	margin-top:20px;
-	margin-bottom:15px;
-	border: 1px solid #5c5e63;
 }
 .width {
 	width:100%
@@ -92,6 +87,10 @@
 .downloadlabel {
 	color:#ffffff;
 	margin-top:50px;
+}
+.logos{
+	width:100%;
+	max-width:200px; 
 }
 
 
