@@ -6,9 +6,13 @@ const IATALogo = '../../../../static/images/IATA-01.png';
 const hrsLogo = '../../../../static/images/24HR-01.png';
 export default () => 
     <div className={css.content1}>
-      <Row type="flex" justify="center" className={css.padding50}>
-        <Row type="flex" justify="space-between">
-            <Col className={css.globalpinoylogo} span={24}><img alt="globalpinoytravel-White" src={globalPinoyLogo}/></Col>
+      <div className={css.globalpinoylogo}>
+        <Row>
+            <Col span={24}><img alt="globalpinoytravel-White" src={globalPinoyLogo}/></Col>
+        </Row>
+      </div>
+      <Row type="flex" justify="left" className={css.padding50}>
+        <Row gutter={34} type="flex" justify="space-between">
             <Col span={8}><img alt="Secure Logo" src={secureLogo} className={css.bottomlogo} /></Col>
             <Col span={8}><img alt="IATA Logo" src={IATALogo} className={css.bottomlogo} /></Col>
             <Col span={8}><img alt="24HR Logo" src={hrsLogo} className={css.bottomlogo} /></Col>

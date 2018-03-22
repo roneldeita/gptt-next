@@ -4,13 +4,19 @@ import withRedux from 'next-redux-wrapper'
 import Layout from '../components/layout/Layout'
 import Carousel from '../components/home/container/CarouselContainer'
 import Cities from '../components/home/container/CitiesContainer'
+import BottomBar from '../components/home/container/BottomBarContainer'
+import Guide from '../components/home/container/GuideContainer'
+import Destination from '../components/home/container/DestinationContainer'
 
 class Index extends React.Component{
   render(){
     return(
       <Layout path={this.props.url.pathname}>
         <Carousel/>
+        <Destination/>
         <Cities/>
+        <Guide/>
+        <BottomBar/>
       </Layout>
     )
   }
