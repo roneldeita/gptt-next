@@ -32,6 +32,9 @@ const header = (
 			
 		</div>
 )
+const spacer =(
+		<Row style={{paddingTop:"20px",paddingBottom:"20px"}}></Row>
+)
 const guideTabs =(
 		<div>
 			<Row>
@@ -62,7 +65,7 @@ const guideTabs =(
 			 			</Col>
 			 			
 			 			<Col xs={24} sm={24} md={8} lg={8} xl={8}>
-			 			 <Collapse bordered={false} defaultActiveKey={['0']}>
+			 			 <Collapse bordered={false} defaultActiveKey={['1']}>
 						    <Panel showArrow={false} header={header} key="1">
 						      {text}
 						    </Panel>
@@ -107,9 +110,11 @@ const guideTabs =(
 export default () => {
 	return (
 		<div>
+			{spacer}
 			{guideTitle}
 			{guideMessage}
-			{guideTabs}		
+			{guideTabs}	
+			{spacer}	
 		</div>
 	)
 }

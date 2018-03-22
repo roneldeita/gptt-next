@@ -3,7 +3,8 @@ import {Row, Col,Card,BackTop,Icon} from 'antd'
 const tempImage = 'http://via.placeholder.com/140x100'
 
 const cityCardStyle = {
-	addingTop:"150px",
+	paddingLeft:"10px",
+	paddingTop:"150px",
 	fontWeight: "bold",
 	fontSize: "20px",
 	color:"#ffffff"
@@ -14,6 +15,10 @@ const padds = {
 const containerCardStyle = {
 	textAlign: "right",
 	paddingTop:"20px"
+}
+
+const titleStyle = {
+	styler :{fontWeight: "bold"}
 }
 
 const cityCard = (data) => (
@@ -42,7 +47,7 @@ export default (images) => {
 				<Col xs={1} sm={2} md={3} lg={3} xl={3}></Col>
 			    <Col xs={22} sm={20} md={18} lg={18} xl={18}>
 			    	<Row>
-			    		<Col span={12}><h1>Find homes locally</h1></Col>
+			    		<Col span={12}><h1 style={titleStyle.styler} >Find homes locally</h1></Col>
 			    		<Col span={12}><p style={containerCardStyle}>View All  <Icon type="right" /></p></Col>
 
 			    	</Row>
