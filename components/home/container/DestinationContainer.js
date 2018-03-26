@@ -5,6 +5,7 @@ class DestinationContainer extends React.Component {
   constructor(props){
     super(props)
      this.state = {
+      loader: true,
       images:[
         { img:'../static/images/banner/el-nido.jpg', slogan:'Cebu',description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
         { img:'../static/images/banner/coastal.jpg', slogan:'Davao',description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit" },
@@ -15,9 +16,14 @@ class DestinationContainer extends React.Component {
       ]
     }
   }
+  componentDidMount(){
+    setTimeout(()=>{
+      this.setState({loader:false})
+    }, 800)
+  }
   render(){
     return(
-      <Destination images={this.state.images}/>
+      <Destination data={this.state}/>
     )
   }
 }

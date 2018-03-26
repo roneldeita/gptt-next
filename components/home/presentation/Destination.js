@@ -1,6 +1,18 @@
-import {Row, Col,Card,Icon,Button} from 'antd'
+import {Row, Col,Card,Icon,Button,Spin} from 'antd'
 import Slider from "react-slick";
 
+
+const antIcon = <Icon type="loading" align="middle" style={{ fontSize: 35,alignContent:"middle" }} spin />
+const Spinner = {
+  position:'absolute',
+  height:'100%',
+  width:'100%',
+  fontSize:'30px',
+  textAlign: 'center',
+  backgroundColor: '#ffffff',
+  maxHeight: '100%',
+  zIndex:1
+}
 
 //CSS here!
 const containerCardStyle = {
@@ -84,15 +96,17 @@ const content = (images) => {
 		<div>
 			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
 			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />   
-
 			<Slider  autoplay {...settings}>
-					  {images.images.map((item, index) => {
+					  {images.map((item, index) => {
 			            return cardContent(item,index)
 			          })}
 	       </Slider>
 	       <style global jsx>{`
 	     	.ant-btn.active, .ant-btn:active, .ant-btn:focus, .ant-btn:hover {
 			     color: #4169E1;
+			}
+			.ant-spin-container {
+			   width:99.5%;
 			}
 	       `}</style>
 		</div>
@@ -101,9 +115,10 @@ const content = (images) => {
 
 
 //Presentation Component
-export default (images) => {
+export default (data) => {
 	return (
 		<div>
+			<Spin spinning={data.data.loader} indicator={antIcon} style={Spinner}>
 			<Row>
 				<Col xs={1} sm={2} md={3} lg={3} xl={3}></Col>
 			    <Col xs={22} sm={20} md={18} lg={18} xl={18}>
@@ -114,13 +129,16 @@ export default (images) => {
 
 			    	</Row>
 			    	<Row type="flex" justify="center">
-			    		  <Col xs={23} sm={23} md={23} lg={23} xl={23}>{content(images)}</Col>
+			    		  <Col xs={23} sm={23} md={23} lg={23} xl={23}>{content(data.data.images)}</Col>
 			    	</Row>
 			    	{spacer}
 			    </Col>
 			    <Col xs={1} sm={2} md={3} lg={3} xl={3}></Col>
-			</Row>
+			</Row>	
+			
+			</Spin>	
 		</div>
+
 
 	)
 }
