@@ -246,6 +246,62 @@ var CitiesContainer = function (_React$Component) {
 
 /***/ }),
 
+/***/ "./components/home/container/DealsContainer.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__presentation_Deals__ = __webpack_require__("./components/home/presentation/Deals.js");
+var _jsxFileName = '/Users/gprs/Documents/gptt-next/components/home/container/DealsContainer.js';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var CitiesContainer = function (_React$Component) {
+  _inherits(CitiesContainer, _React$Component);
+
+  function CitiesContainer(props) {
+    _classCallCheck(this, CitiesContainer);
+
+    var _this = _possibleConstructorReturn(this, (CitiesContainer.__proto__ || Object.getPrototypeOf(CitiesContainer)).call(this, props));
+
+    _this.state = {
+      deals: [{ img: '../static/images/banner/el-nido.jpg', title: 'Cebu', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        price: 10000 }, { img: '../static/images/banner/el-nido.jpg', title: 'Cebu', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        price: 10000 }, { img: '../static/images/banner/el-nido.jpg', title: 'Cebu', description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        price: 10000 }]
+    };
+
+    return _this;
+  }
+
+  _createClass(CitiesContainer, [{
+    key: 'render',
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__presentation_Deals__["a" /* default */], { deals: this.state, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      });
+    }
+  }]);
+
+  return CitiesContainer;
+}(__WEBPACK_IMPORTED_MODULE_0_react___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["a"] = (CitiesContainer);
+
+/***/ }),
+
 /***/ "./components/home/container/DestinationContainer.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -759,6 +815,397 @@ var cityCard = function cityCard(data) {
 			})
 		)
 	);
+});
+
+/***/ }),
+
+/***/ "./components/home/presentation/Deals.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd__ = __webpack_require__("antd");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_antd___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_antd__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _jsxFileName = "/Users/gprs/Documents/gptt-next/components/home/presentation/Deals.js";
+
+
+
+//CSS here!
+var containerCardStyle = {
+  textAlign: "right",
+  paddingTop: "20px"
+};
+var titleStyle = {
+  styler: { fontWeight: "bold" }
+};
+var spacerStyle = {
+  styler: { paddingTop: "20px", paddingBottom: "20px" }
+};
+var spacer = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Row"], { style: spacerStyle.styler, __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  }
+});
+var CardContentStyle = {
+  container: { marginBottom: "10px", boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" },
+  cardCover: { height: "300px" },
+  title: { fontWeight: "bold", fontSize: "20px", color: "#191d21" },
+  price: { fontWeight: "bold", fontSize: "20px", textAlign: "end", color: "#0275b6" },
+  Icon: { fontSize: "20px" },
+  bottomSpace: { marginTop: "20px" },
+  clock: { color: "#768080", textAlign: "end" }
+};
+
+var Contents = function Contents(props) {
+  var deals = props.deals.deals;
+
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "div",
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+      { gutter: 16, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        }
+      },
+      deals.map(function (item, index) {
+        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { key: index, xs: 24, sm: 24, md: 8, lg: 8, xl: 8, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 33
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(CardContent, { deal: item, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 33
+            }
+          })
+        );
+      })
+    )
+  );
+};
+
+var CardContent = function CardContent(deal) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "div",
+    { style: CardContentStyle.container, __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_antd__["Card"],
+      {
+        hoverable: true,
+        bordered: false,
+        cover: __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { alt: "example", src: "../static/images/banner/el-nido.jpg", style: CardContentStyle.cardCover, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+          }
+        }), __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { span: 1, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 49
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { xs: 22, sm: 22, md: 22, lg: 22, xl: 22, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 50
+            }
+          },
+          " ",
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { xs: 16, sm: 16, md: 16, lg: 16, xl: 16, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 50
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              { style: CardContentStyle.title, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 50
+                }
+              },
+              "Hongkong DisneyLand"
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { xs: 8, sm: 8, md: 8, lg: 8, xl: 8, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 51
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              { style: CardContentStyle.price, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 51
+                }
+              },
+              "Php ",
+              "20,000"
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { span: 1, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 52
+          }
+        })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 54
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { span: 1, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 55
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { xs: 22, sm: 22, md: 22, lg: 22, xl: 22, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 56
+            }
+          },
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 1, md: 1, lg: 1, xl: 1, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 57
+          }
+        })
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+        {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 59
+          }
+        },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { span: 1, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 60
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+          { xs: 22, sm: 22, md: 22, lg: 22, xl: 22, __source: {
+              fileName: _jsxFileName,
+              lineNumber: 61
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+            { style: CardContentStyle.bottomSpace, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 62
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+              { xs: 14, sm: 14, md: 14, lg: 14, xl: 14, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              },
+              "Inclusions:  ",
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "car", style: CardContentStyle.Icon, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              }),
+              "   ",
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "car", style: CardContentStyle.Icon, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              }),
+              "  ",
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "car", style: CardContentStyle.Icon, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 63
+                }
+              }),
+              " "
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+              { xs: 10, sm: 10, md: 10, lg: 10, xl: 10, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 64
+                }
+              },
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "p",
+                { style: CardContentStyle.clock, __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 64
+                  }
+                },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "clock-circle-o", __source: {
+                    fileName: _jsxFileName,
+                    lineNumber: 64
+                  }
+                }),
+                " 7 Days"
+              )
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { span: 1, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 67
+          }
+        })
+      )
+    )
+  );
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (function (props) {
+  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+    "div",
+    {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      }
+    },
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+      {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        }
+      },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        }
+      }),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+        { xs: 22, sm: 20, md: 18, lg: 18, xl: 18, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 80
+          }
+        },
+        spacer,
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+          {
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 82
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { span: 12, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 83
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "h1",
+              { style: titleStyle.styler, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 83
+                }
+              },
+              "Deals and Discounts"
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { span: 12, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 84
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+              "p",
+              { style: containerCardStyle, __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 84
+                }
+              },
+              "View All  ",
+              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Icon"], { type: "right", __source: {
+                  fileName: _jsxFileName,
+                  lineNumber: 84
+                }
+              })
+            )
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          __WEBPACK_IMPORTED_MODULE_1_antd__["Row"],
+          { type: "flex", justify: "center", __source: {
+              fileName: _jsxFileName,
+              lineNumber: 87
+            }
+          },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            __WEBPACK_IMPORTED_MODULE_1_antd__["Col"],
+            { xs: 24, sm: 24, md: 24, lg: 24, xl: 24, __source: {
+                fileName: _jsxFileName,
+                lineNumber: 88
+              }
+            },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(Contents, _extends({}, props, {
+              __source: {
+                fileName: _jsxFileName,
+                lineNumber: 88
+              }
+            }))
+          )
+        ),
+        spacer
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Col"], { xs: 1, sm: 2, md: 3, lg: 3, xl: 3, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        }
+      })
+    )
+  );
 });
 
 /***/ }),
@@ -2580,6 +3027,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_home_container_BottomBarContainer__ = __webpack_require__("./components/home/container/BottomBarContainer.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_home_container_GuideContainer__ = __webpack_require__("./components/home/container/GuideContainer.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_home_container_DestinationContainer__ = __webpack_require__("./components/home/container/DestinationContainer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_container_DealsContainer__ = __webpack_require__("./components/home/container/DealsContainer.js");
 var _jsxFileName = '/Users/gprs/Documents/gptt-next/pages/index.js';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2589,6 +3037,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 
 
 
@@ -2616,37 +3065,43 @@ var Index = function (_React$Component) {
         __WEBPACK_IMPORTED_MODULE_3__components_layout_Layout__["a" /* default */],
         { path: this.props.url.pathname, __source: {
             fileName: _jsxFileName,
-            lineNumber: 14
+            lineNumber: 15
           }
         },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__components_home_container_CarouselContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 15
+            lineNumber: 16
           }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__components_home_container_DestinationContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 16
-          }
-        }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_home_container_CitiesContainer__["a" /* default */], {
-          __source: {
-            fileName: _jsxFileName,
             lineNumber: 17
           }
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_home_container_GuideContainer__["a" /* default */], {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__components_home_container_DealsContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 18
           }
         }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_home_container_BottomBarContainer__["a" /* default */], {
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__components_home_container_CitiesContainer__["a" /* default */], {
           __source: {
             fileName: _jsxFileName,
             lineNumber: 19
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__components_home_container_GuideContainer__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20
+          }
+        }),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__components_home_container_BottomBarContainer__["a" /* default */], {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21
           }
         })
       );

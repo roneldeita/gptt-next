@@ -7,6 +7,7 @@ import Cities from '../components/home/container/CitiesContainer'
 import BottomBar from '../components/home/container/BottomBarContainer'
 import Guide from '../components/home/container/GuideContainer'
 import Destination from '../components/home/container/DestinationContainer'
+import Deals from '../components/home/container/DealsContainer'
 
 class Index extends React.Component{
   render(){
@@ -14,6 +15,7 @@ class Index extends React.Component{
       <Layout path={this.props.url.pathname}>
         <Carousel/>
         <Destination/>
+        <Deals/>
         <Cities/>
         <Guide/>
         <BottomBar/>
