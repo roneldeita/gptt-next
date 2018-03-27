@@ -20,6 +20,10 @@ const containerCardStyle = {
 const titleStyle = {
 	styler :{fontWeight: "bold"}
 }
+const backTopStyle = {
+	fontSize: 40,
+	color:"#0275b6"
+}
 
 const cityCard = (data) => (
 	<div>
@@ -42,7 +46,9 @@ export default (images) => {
 	const CityCards = cityCard(images)
 	return (
 		<div>
-			<BackTop />
+			 <BackTop>
+		      <div className="ant-back-top-inner"><Icon type="up-circle" style={backTopStyle} /></div>
+		    </BackTop>
 			<Row>
 				<Col xs={1} sm={2} md={3} lg={3} xl={3}></Col>
 			    <Col xs={22} sm={20} md={18} lg={18} xl={18}>

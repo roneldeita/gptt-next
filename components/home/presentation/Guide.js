@@ -12,15 +12,20 @@ const text = (
   </p>
 )
 
+const styler = {
+	fontTitle : {fontSize:"43px"},
+	fontMessage : {fontSize:"21px"}
+}
+
 const guideTitle = (
 		<div>
-			<h1 align="middle">Other Useful Information</h1>
+			<h1 style={styler.fontTitle} align="middle">Other Useful Information</h1>
 		</div>
 )
 const guideMessage = (
 		<div>
-			<p align="middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-			<p align="middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+			<p style={styler.fontMessage} align="middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+			<p style={styler.fontMessage} align="middle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
 		</div>
 )
 const header = (

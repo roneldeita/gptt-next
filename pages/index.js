@@ -8,6 +8,7 @@ import BottomBar from '../components/home/container/BottomBarContainer'
 import Guide from '../components/home/container/GuideContainer'
 import Destination from '../components/home/container/DestinationContainer'
 import Deals from '../components/home/container/DealsContainer'
+import Video from '../components/home/container/VideoContainer'
 
 class Index extends React.Component{
   render(){
@@ -17,6 +18,7 @@ class Index extends React.Component{
         <Destination/>
         <Deals/>
         <Cities/>
+        <Video/>
         <Guide/>
         <BottomBar/>
       </Layout>

@@ -80,7 +80,7 @@ export default (props) => (
           <Col xs={22} sm={20} md={18} lg={18} xl={18}>
             {spacer}
             <Row>
-              <Col span={12}><h1 style={titleStyle.styler}>Deals and Discounts</h1></Col>
+              <Col span={12}><h1 style={titleStyle.styler}>Deals & Discounts</h1></Col>
               <Col span={12}><p style={containerCardStyle}>View All  <Icon type="right" /></p></Col>
 
             </Row>

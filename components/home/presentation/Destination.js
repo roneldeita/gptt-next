@@ -21,7 +21,7 @@ const containerCardStyle = {
 }
 const contentCardStyle = {
 	spaceCardGap : {padding:"10px"},
-	bodyStyle : (image,key) => {return {borderRadius:"4px",height:"440px",backgroundImage:'url(' + image.img+ ')'} },
+	bodyStyle : (image,key) => {return {borderRadius:"4px",height:"440px",backgroundImage:'url(' + image.img+ ')',backgroundSize: "100% 100%"} },
 	labelStyle : {marginTop:"250px",paddingLeft:"20px"},
 	fontColor:  {color:"#ffffff"} 
 }
@@ -116,6 +116,22 @@ const content = (images) => {
 
 //Presentation Component
 export default (data) => {
+
+	//for destination carousel slide image number adjustment
+	console.log(data.data.width)
+	if(data.data.width < 576){
+		settings.slidesToShow = 1
+		console.log(1)
+	}else if (data.data.width >= 576 && data.data.width < 992 ){
+		settings.slidesToShow = 2
+	}else if(data.data.width >= 992 && data.data.width < 1200 ){
+		settings.slidesToShow = 3
+	}else
+	{
+		settings.slidesToShow = 4
+	}
+	//
+
 	return (
 		<div>
 			<Spin spinning={data.data.loader} indicator={antIcon} style={Spinner}>
